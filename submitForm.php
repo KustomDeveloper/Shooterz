@@ -51,6 +51,11 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
       echo "</ul>";
   
   } else {
+      $username = strip_tags($username);
+      $email    = strip_tags($email); 
+      $pass     = strip_tags($pass);  
+      $pass_mem = strip_tags($pass_mem); 
+      $secret   = strip_tags($secret);  
 
       add_registered_user($username, $email, $pass);
       redirect_user(thank_you);
