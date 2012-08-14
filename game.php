@@ -13,7 +13,7 @@
         <div class="video-controls">
   	    	<button id="play"><img src="images/play-button.png"/></button>
         	<button id="pause"><img src="images/pause-button.png"/></button>
-            <button id="stop"></button <!--Causes error in script-->
+          <button id="stop"></button <!--Causes error in script-->
 
        </div><!--video controls-->  
 

@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 35, ../sass/screen.scss */
 body {
-  background: #fff;
+  background: white;
 }
 
 /* line 38, ../sass/screen.scss */
@@ -84,33 +84,38 @@ td {
 /* line 52, ../sass/screen.scss */
 .web-glyphs {
   font-family: 'EntypoRegular';
-  font-size: 60px;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
+.highlight {
+  color: red;
+  line-height: 1.5;
+}
+
+/* line 59, ../sass/screen.scss */
 .nav {
   position: absolute;
   top: -30px;
   right: 20px;
 }
-/* line 63, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .nav ul li {
   display: inline-block;
   margin-left: 5px;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .nav a {
   text-decoration: none;
   color: white;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .nav ul li a:hover {
   color: #ccc;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 #wrapper {
   position: relative;
   min-height: 800px;
@@ -120,44 +125,44 @@ td {
   font-family: "Open Sans", sans-serif, "trebuchet ms", georgia;
   color: #333333;
 }
-/* line 84, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 #wrapper h1 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #wrapper p {
   font-size: 22px;
   margin-bottom: 20px;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 #loginbar {
   width: 100%;
   height: 35px;
   background: #d76532;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .login {
   position: relative;
   z-index: 9999;
 }
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .login ul {
   position: absolute;
   right: 0px;
   top: -120px;
 }
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .login ul li {
   font-size: 16px;
   color: white;
   font-weight: bold;
   display: inline;
 }
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .login ul li input {
   color: white;
   padding: 1px 6px 1px 6px;
@@ -172,14 +177,57 @@ td {
   border: none;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
+.webicons {
+  font-family: 'EntypoRegular';
+  font-size: 48px;
+  color: #333;
+  display: inline;
+  position: absolute;
+  top: -20px;
+  left: -35px;
+}
+
+/* line 135, ../sass/screen.scss */
+.sendlogin {
+  font-size: 12px !important;
+  background: #333333;
+  border: 2px solid #333333 !important;
+  margin: 0;
+  padding: 1px 10px !important;
+  box-shadow: none;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  color: #ccc !important;
+  display: inline;
+}
+
+/* line 146, ../sass/screen.scss */
+.sendlogin:hover {
+  color: white !important;
+  border: 2px solid white !important;
+  cursor: pointer;
+}
+
+/* line 151, ../sass/screen.scss */
 #branding {
   width: 100%;
   height: 70px;
   background: #333;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
+.texture {
+  width: 100%;
+  height: 10px;
+  background: url("../images/dotted-lg.png") repeat-x;
+  position: absolute;
+}
+
+/* line 162, ../sass/screen.scss */
 .logo {
   position: absolute;
   top: -60px;
@@ -188,7 +236,7 @@ td {
 /*===================================
       VIDEO STYLES
 ===================================*/
-/* line 140, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 #camera {
   display: block;
   width: 300px;
@@ -206,7 +254,7 @@ td {
   border-top-right-radius: 30px;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .video-controls {
   position: relative;
   height: 30px;
@@ -225,26 +273,26 @@ td {
   border-bottom-right-radius: 30px;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 #play, #pause, #stop {
   position: absolute;
   border: none;
   background: none;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 #play {
   bottom: -10px;
   left: 70px;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #pause {
   bottom: -10px;
   left: 130px;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .opponent {
   position: absolute;
   right: 31%;
@@ -254,7 +302,7 @@ td {
 /*===================================
       FOOTER STYLES
 ===================================*/
-/* line 173, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 #footer {
   position: relative;
   width: 100%;
@@ -262,77 +310,67 @@ td {
   background: #333;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .footer-logo {
   position: absolute;
   bottom: -210px;
   left: 40px;
-  z-index: 9999;
+  z-index: 999999;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .footer-nav {
   position: absolute;
   bottom: -180px;
   right: 20px;
   z-index: 9999;
 }
-/* line 191, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .footer-nav ul li {
   display: inline-block;
   margin-left: 5px;
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .footer-nav a {
   text-decoration: none;
   color: white;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .footer-nav a:hover {
   color: #cccccc;
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 #copyright {
   position: relative;
   color: black;
   width: 100%;
   height: 40px;
-  background: #fff;
+  background: white;
+  background: url("../images/dotted-lg.png") repeat-x;
   z-index: 99999;
 }
-/* line 211, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #copyright span {
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 40%;
 }
 
-/* line 217, ../sass/screen.scss */
-.webicons {
-  font-family: 'EntypoRegular';
-  font-size: 48px;
-  color: #333;
-  position: absolute;
-  top: -20px;
-  left: -35px;
-  display: inline;
-}
-
-/* line 226, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .tagline {
   margin: 80px 0px;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 #warningMsg {
   color: red;
   z-index: 999999;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .highlight-links {
   font-weight: bold;
   color: #d76532;
@@ -341,12 +379,38 @@ td {
 /*============================================
         REGISTRATION STYLES
 ============================================*/
-/* line 244, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .register {
   margin-top: 200px;
 }
-/* line 246, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
+.register .notice {
+  color: inherit;
+  font-weight: bold;
+}
+/* line 273, ../sass/screen.scss */
+.register .notice span {
+  padding: 10px;
+  font-family: 'EntypoRegular';
+  font-size: 40px;
+  color: red;
+}
+/* line 280, ../sass/screen.scss */
+.register .invalid_field {
+  margin-left: 20px;
+  color: red;
+}
+/* line 284, ../sass/screen.scss */
+.register label {
+  display: block;
+  width: 180px;
+  float: left;
+  margin: 8px 4px 6px 4px;
+  text-align: left;
+}
+/* line 292, ../sass/screen.scss */
 .register input {
+  margin: 5px 0px;
   color: white;
   padding: 3px 15px;
   font-size: 18px;
@@ -359,18 +423,41 @@ td {
   box-shadow: none;
   border: none;
 }
-/* line 255, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .register input:focus {
   border: none;
   box-shadow: none;
 }
 
-/* line 260, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
+.terms {
+  color: #d76532;
+}
+/* line 309, ../sass/screen.scss */
+.terms a {
+  font-weight: bold;
+  font-style: italic;
+  color: #333333;
+}
+
+/* line 316, ../sass/screen.scss */
+.error-messages {
+  color: red;
+  font-style: italic;
+  position: absolute;
+  top: 80px;
+}
+/* line 321, ../sass/screen.scss */
+.error-messages li {
+  margin: 10px;
+}
+
+/* line 325, ../sass/screen.scss */
 #regi-button {
+  margin: 20px 0px;
   font-size: 16px;
   font-weight: bold;
   color: white;
-  margin: 20px 0px 0px 215px;
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
   -ms-border-radius: 35px;
@@ -381,27 +468,22 @@ td {
   background: #333333;
 }
 
-/* line 274, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 #regi-button:hover {
   font-weight: bold;
   cursor: pointer;
   background: #d76532;
 }
 
-/* line 279, ../sass/screen.scss */
-table {
-  margin: 3px 0px;
-}
-
 /*============================================
         GAMEPAGE STYLES
 ============================================*/
-/* line 286, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 #main-app {
   margin-top: 100px;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 #adspace-one {
   height: 80px;
   border: 1px dashed #ccc;
@@ -413,7 +495,7 @@ table {
   text-align: center;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 #drink-count {
   position: absolute;
   top: 120px;
@@ -430,7 +512,7 @@ table {
   color: white;
 }
 
-/* line 313, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 #reset-counter {
   position: absolute;
   top: 380px;
@@ -447,13 +529,13 @@ table {
   color: white;
 }
 
-/* line 324, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 #reset-counter:hover {
   background: #d76532;
   cursor: pointer;
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 #score-box {
   position: absolute;
   top: 200px;
@@ -466,14 +548,14 @@ table {
   -o-border-radius: 35px;
   border-radius: 35px;
 }
-/* line 335, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 #score-box .plus, #score-box .minus {
   position: absolute;
   width: 40px;
   font-size: 35px;
   color: white;
 }
-/* line 341, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 #score-box button {
   padding: 0px 2px;
   background: #d76532;
@@ -484,23 +566,23 @@ table {
   -o-border-radius: 35px;
   border-radius: 35px;
 }
-/* line 347, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 #score-box button:hover {
   background: #333;
   cursor: pointer;
 }
-/* line 351, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 #score-box .plus {
   right: 20px;
   top: 35px;
 }
-/* line 355, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 #score-box .minus {
   right: 20px;
   top: 90px;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .my-score {
   color: white;
   font-weight: bold;
@@ -510,7 +592,7 @@ table {
 /*=============================
       CHATBOX STYLES
 /*=============================*/
-/* line 369, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 #chatbox {
   height: 200px;
   width: 320px;
@@ -528,7 +610,7 @@ table {
   overflow-y: scroll;
 }
 
-/* line 381, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 #textform {
   height: 50px;
   width: 320px;
@@ -544,7 +626,7 @@ table {
   font-size: 14px;
 }
 
-/* line 391, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 #shout {
   margin: 10px 0px;
   background: #333333;

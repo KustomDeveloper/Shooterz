@@ -33,7 +33,7 @@
   $fontfam:'Open Sans', sans-serif,"trebuchet ms",georgia;
 
 body{
-  background:#fff;
+  background:$color4;
 }
 td{
   font-weight:bold;
@@ -51,10 +51,11 @@ td{
 }
 .web-glyphs{
   font-family:'EntypoRegular';
-  font-size:60px;
 }
-
-
+.highlight{
+  color:red;
+  line-height:1.5;
+}
 .nav{
   position:absolute;
   top:-30px;
@@ -121,12 +122,43 @@ color:#ccc;
     }
   }
 }
+.webicons{
+  font-family:'EntypoRegular';
+  font-size:48px;
+  color:#333;
+  display:inline;
+  position:absolute;
+  top:-20px;
+  left:-35px;
+  
+}
+.sendlogin{
+  font-size:12px !important;
+  background:$color5;
+  border:2px solid $color5 !important;
+  margin:0;
+  padding:1px 10px !important;
+  box-shadow: none;
+  @include border-radius(15px); 
+  color:#ccc !important;
+  display:inline;
+}
+.sendlogin:hover{
+    color:$color4 !important;
+    border:2px solid $color4 !important;
+    cursor:pointer;
+  }
 #branding{
   width:100%;
   height:70px;
   background:#333;
 }
-
+.texture{
+  width:100%;
+  height:10px;
+  background: url('../images/dotted-lg.png') repeat-x;
+  position:absolute;
+}
 .logo{
   position:absolute;
   top:-60px;
@@ -180,7 +212,7 @@ color:#ccc;
   position:absolute;
   bottom:-210px;
   left:40px;
-  z-index:9999;
+  z-index:999999;
 }
 .footer-nav{
   position:absolute;
@@ -206,23 +238,16 @@ color:#ccc;
   color:$color0;
   width:100%;
   height:40px;
-  background:#fff;
+  background:$color4;
+  background: url('../images/dotted-lg.png') repeat-x;
   z-index:99999;
     span{
       position: absolute;
-      top:10px;
+      top:15px;
       left:40%;
     }
 }
-.webicons{
-  font-family:'EntypoRegular';
-  font-size:48px;
-  color:#333;
-  position:absolute;
-  top:-20px;
-  left:-35px;
-  display:inline;
-}
+
 .tagline{
   margin:80px 0px;
 }
@@ -240,10 +265,32 @@ color:#ccc;
         REGISTRATION STYLES
 ============================================*/
 
-
 .register{
   margin-top:200px;
+   .notice{
+      color:inherit;
+      font-weight:bold;
+        span{
+          padding:10px;
+          font-family:'EntypoRegular';
+          font-size:40px;
+          color:red;
+          }
+      }
+      .invalid_field{
+        margin-left:20px;
+        color:red;
+      }
+      label {
+        display: block;
+        width: 180px;
+        float: left;
+        margin: 8px 4px 6px 4px;
+        text-align: left;
+        }    
+
       input{
+        margin:5px 0px;
         color:$color4;
         padding:3px 15px; 
         font-size:18px;
@@ -251,22 +298,36 @@ color:#ccc;
         background:#333;
         box-shadow:none;
         border:none;
-  }
+        }
       input:focus{
-      border:none;
-      box-shadow:none;   
+        border:none;
+        box-shadow:none;   
+        }
   }
-}
+  .terms{
+    color:$color1;
+    a{
+      font-weight:bold;
+      font-style:italic;
+      color:$color5;
+    
+    }
+  }
+  .error-messages{
+    color:red;
+    font-style:italic;
+    position:absolute;
+    top:80px;
+    li{
+      margin:10px;
+    }
+  }
 #regi-button {
+  margin: 20px 0px;
   font-size: 16px;
   font-weight:bold;
   color: white;
-  margin: 20px 0px 0px 215px;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
-  border-radius: 35px;
+  @include border-radius(35px);
   border: none;
   padding: 8px 20px;
   background: #333333;
@@ -276,9 +337,6 @@ color:#ccc;
     cursor:pointer;
     background:$color1;
     }
-table{
-  margin:3px 0px;
-}
 
 /*============================================
         GAMEPAGE STYLES

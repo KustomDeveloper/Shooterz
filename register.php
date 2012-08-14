@@ -1,64 +1,39 @@
 <?php include("header.php"); ?>
 
-<div id="wrapper">
+
+<!--FUNCTIONS.PHP INCLUDED IN HEADER.PHP-->
+<?php require("submitForm.php"); ?>
   
-  <div class="login">
-    <ul>
-      <li><span class="webicons"><img src="images/webicons/glyphicons_003_user.png"></span>Sign In: </li>
-      <li><input type="text" id="username" size="13" value="Username"></li>
-      <li><input type="text" id="password" size="13" value="Password"></li>
-    </ul>
-  </div><!--End login-->
-	
-  <?php include ("nav.php");?>
-	
- <div class="logo"><img src="images/shooterz-comic-logo.png" width="250px"height="143px"/></div>
-  
+  <form action="" method="post">
+ 
 	<div class="register">
-    <table>
-    <tr>
-      <td width="170px">Choose a username:</td>
-      <td class="regi-input"><input type="text" id="username" size="16" value=""></td>
-    </tr>
-    </table>
 
-    <table>
-    <tr>
-      <td width="170px">Enter your e-mail:</td>
-      <td class="regi-input"><input type="email" id="email" size="16" value=""></td>
-    </tr>
-    </table>
-
-    <table>
-    <tr>
-      <td width="170px">Choose a password:</td>
-      <td class="regi-input"><input type="password" id="password" size="16" value=""></td>
-    </tr>
-    </table>
-
-    <table>
-    <tr>
-      <td width="170px">Retype password:</td>
-      <td class="regi-input"><input type="password" id="password" size="16" value=""></td>
-    </tr>
-    </table>
-
-    <table>
-    <tr>
-      <td width="170px">"What is 3 + 4 + 1?"</td>
-      <td class="regi-input"><input type="text" id="secret" size="16" value=""></td>
-    </tr>
-    </table>
-
-    
-    <button id="regi-button">Submit</button>
-    
-
-
-  </div><!--End login-->
+      <label for="username">Choose a username:</label>
+      <input type="text" class="regi-input" id="username" name="username"  size="16" value='<?php echo old("username");?>' />
+      <span class="invalid_field"></span> <br/>
+      <label for="email">Enter your e-mail:</label>
+      <input type="email" class="regi-input" id="email" name="email" size="16" value='<?php echo old("email");?>' />
+      <span class="invalid_field"></span> <br/>
+      <label for="password">Choose a password:</label>
+      <input type="password" class="regi-input" id="password" name="pass" size="16" value='<?php echo old("pass");?>' />
+      <span class="invalid_field"></span> <br/>
+      <label for="pass_mem">Retype password:</label>
+      <input type="password" class="regi-input" id="pass_mem" name="pass_mem" size="16" value='<?php echo old("pass_mem");?>' />
+      <span class="invalid_field"></span> <br/>
+      <label for="secret">"What is 3 + 4 + 1?"</label>
+      <input type="text" class="regi-input" id="secret" name="secret" size="16" value='<?php echo old("secret");?>' />
+      <span class="invalid_field"></span> <br/><br/>
+      <input type="checkbox" style="margin:20px 20px 20px 5px ;" class="regi-input" id="tos" name="tos" value="true" /><span class="terms">Do you agree to the:<a href="terms.php"> Terms Of Service </a> ? </span><br/>
+      
+      <label for="submit"></label> <button id="regi-button" type="submit">Submit</button>
   
-    <?php include ("footer-nav.php");?>
-    <div class="footer-logo"><img src="images/shooterz-comic-logo-footer.png"/></div>
-</div><!--Wrapper-->
+  </div>
+  
+  </form><!--End form-->
 
-<?php include("footer.php"); ?>
+<?php // phpinfo();?>
+
+<?php include ("footer-nav.php");?>
+
+<?php include("footer.php"); ?>   
+  
