@@ -1,25 +1,40 @@
 <?php
-$server = 'localhost';
-$user = 'root';
-$pass = '';
-$db = 'registered_users';
 
-$mysqli = new mysqli($server, $user, $pass, $db);
+/*=====================================================================
+		PDO MYSQL DATABASE CONNECTION
+======================================================================*/
 
-if (mysqli_connect_error()) {
-    die('Connect Error (' . mysqli_connect_errno() . ') '
-            . mysqli_connect_error());
-}
+$config['db'] = array(           //================================================
+    'host'     => 'localhost',  //====NEED TO WRAP ALL CODE IN TRY BLOCKS==============
+    'username' => 'root',       //=================================================
+    'password' => '',
+    'dbname'   => 'registered_users',
+);
+  $conn = new PDO('mysql:host=' . $config['db']['host'] . ';dbname=' . $config['db']['dbname'], 
+      $config['db']['username'], $config['db']['password']);
+  
+//try {
+$sql  = "INSERT INTO PLAYERS (player_name, player_password, player_email) 
+          VALUES (?, ?, ?)";
+$db = $conn->prepare($sql);
 
-echo 'Success... ' . $mysqli->host_info . "\n";
+$db->bindParam(1, $username);
+$db->bindParam(2, $pass);
+$db->bindParam(3, $email);
 
-$mysqli->close();
+/*=====================================================================
+    DATA I NEED TO INSERT
+======================================================================*/
 
+$username = "lueytyer";//$_POST['user_name'];
+$pass     = "lueyueysspass";//$_POST['password'];
+$email    = "stuey@gmail.com";//$_POST['email'];
+        
+$db->execute();
 
-
-
-
-
+/*=====================================================================
+		CONNECTIONS
+======================================================================*/
 
 
 
