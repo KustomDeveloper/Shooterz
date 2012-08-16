@@ -382,25 +382,27 @@ td {
 /* line 268, ../sass/screen.scss */
 .register {
   margin-top: 200px;
+  padding: 15px;
+  width: 50%;
 }
-/* line 270, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .register .notice {
   color: inherit;
   font-weight: bold;
 }
-/* line 273, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .register .notice span {
   padding: 10px;
   font-family: 'EntypoRegular';
   font-size: 40px;
   color: red;
 }
-/* line 280, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .register .invalid_field {
   margin-left: 20px;
   color: red;
 }
-/* line 284, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .register label {
   display: block;
   width: 180px;
@@ -408,7 +410,7 @@ td {
   margin: 8px 4px 6px 4px;
   text-align: left;
 }
-/* line 292, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .register input {
   margin: 5px 0px;
   color: white;
@@ -423,36 +425,36 @@ td {
   box-shadow: none;
   border: none;
 }
-/* line 302, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .register input:focus {
   border: none;
   box-shadow: none;
 }
 
-/* line 307, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .terms {
   color: #d76532;
 }
-/* line 309, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .terms a {
   font-weight: bold;
   font-style: italic;
   color: #333333;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .error-messages {
   color: red;
   font-style: italic;
   position: absolute;
   top: 80px;
 }
-/* line 321, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .error-messages li {
   margin: 10px;
 }
 
-/* line 325, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 #regi-button {
   margin: 20px 0px;
   font-size: 16px;
@@ -468,7 +470,7 @@ td {
   background: #333333;
 }
 
-/* line 335, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 #regi-button:hover {
   font-weight: bold;
   cursor: pointer;
@@ -478,12 +480,12 @@ td {
 /*============================================
         GAMEPAGE STYLES
 ============================================*/
-/* line 344, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #main-app {
   margin-top: 100px;
 }
 
-/* line 348, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 #adspace-one {
   height: 80px;
   border: 1px dashed #ccc;
@@ -495,7 +497,7 @@ td {
   text-align: center;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 #drink-count {
   position: absolute;
   top: 120px;
@@ -512,7 +514,7 @@ td {
   color: white;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 #reset-counter {
   position: absolute;
   top: 380px;
@@ -529,13 +531,13 @@ td {
   color: white;
 }
 
-/* line 382, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 #reset-counter:hover {
   background: #d76532;
   cursor: pointer;
 }
 
-/* line 386, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 #score-box {
   position: absolute;
   top: 200px;
@@ -548,14 +550,14 @@ td {
   -o-border-radius: 35px;
   border-radius: 35px;
 }
-/* line 393, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 #score-box .plus, #score-box .minus {
   position: absolute;
   width: 40px;
   font-size: 35px;
   color: white;
 }
-/* line 399, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 #score-box button {
   padding: 0px 2px;
   background: #d76532;
@@ -566,23 +568,23 @@ td {
   -o-border-radius: 35px;
   border-radius: 35px;
 }
-/* line 405, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 #score-box button:hover {
   background: #333;
   cursor: pointer;
 }
-/* line 409, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 #score-box .plus {
   right: 20px;
   top: 35px;
 }
-/* line 413, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 #score-box .minus {
   right: 20px;
   top: 90px;
 }
 
-/* line 418, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .my-score {
   color: white;
   font-weight: bold;
@@ -592,7 +594,7 @@ td {
 /*=============================
       CHATBOX STYLES
 /*=============================*/
-/* line 427, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 #chatbox {
   height: 200px;
   width: 320px;
@@ -610,7 +612,7 @@ td {
   overflow-y: scroll;
 }
 
-/* line 439, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 #textform {
   height: 50px;
   width: 320px;
@@ -626,7 +628,7 @@ td {
   font-size: 14px;
 }
 
-/* line 449, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 #shout {
   margin: 10px 0px;
   background: #333333;

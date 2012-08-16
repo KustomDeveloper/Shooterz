@@ -1,19 +1,19 @@
 <?php
 /*========================================================================
-			Sticky Forms function
+			Sticky Forms Function
 =========================================================================*/
  
 
  function old($key) {
   	if ( !empty($_REQUEST[$key]) ) {
-  		return htmlspecialchars($_REQUEST[$key]);
+  		return htmlspecialchars($_REQUEST[$key], ENT_QUOTES, 'UTF-8');
   	}
   	return '';
  }
 
 
 /*========================================================================
-			Uses built in PHP Email validation function
+			Uses Built In PHP Email Validation Function
 =========================================================================*/
  
 
@@ -23,7 +23,17 @@
 
 
 /*========================================================================
-			Add registered users to mailing_list.php
+      XSS Protection Filter Function
+=========================================================================*/
+
+function htmlEncode($input) {
+   $input = strip_tags($input);
+   return htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
+}
+
+
+/*========================================================================
+			Add registered Users To Mailing_list.php
 =========================================================================*/
 
 
@@ -34,7 +44,7 @@ function add_registered_user($username, $email, $pass) {
 
 
 /*========================================================================
-			Redirect function
+			Redirect Function
 =========================================================================*/
 
 
