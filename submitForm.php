@@ -51,9 +51,10 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
       echo "</ul>";
   
   } else {
+      $salt     = "ywkNmUrJlEqQfhdUnTr";
       $username = htmlEncode($username);
       $email    = htmlEncode($email); 
-      $pass     = htmlEncode($pass);  
+      $pass     = md5(htmlEncode($pass)) . $salt;  
       $pass_mem = htmlEncode($pass_mem); 
       $secret   = htmlEncode($secret);  
 

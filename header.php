@@ -26,6 +26,7 @@
   
   <div id="loginbar">
   </div><!--End loginbar-->
+  
   <div id="branding">
   </div><!--End branding-->
   
@@ -33,17 +34,9 @@
 
   <div id="wrapper">
    
-  <div class="login">
-
-    <ul>
-      <li><span class="webicons">+</span>Sign In: </li>
-      <li><input type="text" id="username" size="13" placeholder="Username"></li>
-      <li><input type="password" id="password" size="13" placeholder="Password"></li>
-      <li><input type="submit" class="sendlogin" value="Log In"></li>
-    </ul>
-  </div><!--End login-->
+  <?php include("login.php"); ?>
   
-  <?php include ("nav.php");?>
+  <?php include ("nav.php"); ?>
 
 
   

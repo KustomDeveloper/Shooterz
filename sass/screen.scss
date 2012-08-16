@@ -90,6 +90,7 @@ color:#ccc;
     p{
       font-size:$two;
       margin-bottom:$margin2;
+      line-height:1.3;
     }
 }
 
@@ -133,15 +134,16 @@ color:#ccc;
   
 }
 .sendlogin{
-  font-size:12px !important;
+  font-size:9px !important;
   background:$color5;
   border:2px solid $color5 !important;
-  margin:0;
   padding:1px 10px !important;
   box-shadow: none;
   @include border-radius(15px); 
   color:#ccc !important;
   display:inline;
+  position:relative;
+  top:-2px;
 }
 .sendlogin:hover{
     color:$color4 !important;
@@ -245,6 +247,8 @@ color:#ccc;
       position: absolute;
       top:15px;
       left:40%;
+      font-family:$fontfam; 
+
     }
 }
 
@@ -277,8 +281,8 @@ color:#ccc;
           font-family:'EntypoRegular';
           font-size:40px;
           color:red;
-          }
-      }
+        }
+    }
       .invalid_field{
         margin-left:20px;
         color:red;
@@ -289,7 +293,7 @@ color:#ccc;
         float: left;
         margin: 8px 4px 6px 4px;
         text-align: left;
-        }    
+      }    
 
       input{
         margin:5px 0px;
@@ -300,19 +304,18 @@ color:#ccc;
         background:#333;
         box-shadow:none;
         border:none;
-        }
+      }
       input:focus{
         border:none;
         box-shadow:none;   
-        }
-  }
+      }
+}
   .terms{
     color:$color1;
     a{
       font-weight:bold;
       font-style:italic;
       color:$color5;
-    
     }
   }
   .error-messages{
@@ -338,7 +341,13 @@ color:#ccc;
     font-weight:bold;
     cursor:pointer;
     background:$color1;
-    }
+}
+.terms-statement{
+  margin-top:100px;
+  p{
+     font-size:16px !important;
+  }
+}
 
 /*============================================
         GAMEPAGE STYLES
