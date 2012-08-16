@@ -9,14 +9,14 @@
       <li><input type="submit" name="sendlogin" class="sendlogin" value="Log In"></li>
     </ul>
 	</form>
-  </div><!--End login-->
+</div><!--End login-->
 
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ( isset($_POST['login_name']) || isset($_POST['login_pass']) ) {
 
-	$login_name = trim($_POST['login_name']);
-	$login_pass = trim($_POST['login_pass']);
+	$login_name = strip_tags(trim($_POST['login_name']));
+	$login_pass = strip_tags(trim($_POST['login_pass']));
 	$login_errors = array();
 
 	if ( empty($login_name) || empty($login_pass) ) {
@@ -31,13 +31,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       echo "</ul>";
   	
   	} else {
-  		//*****FIND A WAY TO *NOT* INCLUDE LOGIN.PHP ON REGISTRATION PAGE
-  		//CLEAN USER DATA
-      	//CONNECT TO DATABASE
-      	// CHECK IF USER AND PASS EXIST USING PREPARED STATEMENTS
-      	//CLOSE DATABASE CONNECTION
-      	//IF PASS EXISTS REDIRECT USER
-      	//IF IT DOESNT EXIST->REPORT ERROR
+      
+      //CLEAN USER DATA
+      $login_name =  htmlEncode($login_name);
+      $login_pass =  htmlEncode($login_pass);
+
+      // CONNECT TO DATABASE & CHECK IF USER AND PASS EXIST USING PREPARED STATEMENTS
+      validate_login($login_name, $login_pass);
+      
+      //CLOSE DATABASE CONNECTION
+          //DONE
+      //IF PASS EXISTS REDIRECT USER
+      //header('Location:find_match.php');
+      //IF IT DOESNT EXIST->REPORT ERROR
+         //DONE
 
     }
 }

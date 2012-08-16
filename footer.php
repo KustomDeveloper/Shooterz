@@ -2,7 +2,7 @@
 </div><!--Wrapper-->
 <div id="footer"></div>
 
-<div id="copyright"><span id="copy">&copy 2012 Shooterz.org | The Online Quarters Game</span></div>
+<div id="copyright"><span id="copy">&copy &nbsp 2012 Shooterz.org | The Online Quarters Game</span></div>
 
 <?php require ('scripts.php'); ?>
 

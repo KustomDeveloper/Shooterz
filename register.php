@@ -32,8 +32,6 @@
   
   </form><!--End form-->
 
-<?php // phpinfo();?>
-
 <?php include ("footer-nav.php");?>
 
 <?php include("footer.php"); ?>   

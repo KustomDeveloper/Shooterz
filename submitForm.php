@@ -4,7 +4,8 @@
 			My registration validation
 =========================================================================*/
 
-if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+if ( isset($_POST['username']) || isset($_POST['email']) || isset($_POST['pass'])
+|| isset($_POST['pass_mem']) || isset($_POST['secret']) ) {
 
   $status = array();
 	
@@ -51,14 +52,19 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
       echo "</ul>";
   
   } else {
-      $salt     = "ywkNmUrJlEqQfhdUnTr";
+      //$salt     = "ywkNmUrJlEqQfhdUnTr";
       $username = htmlEncode($username);
       $email    = htmlEncode($email); 
-      $pass     = md5(htmlEncode($pass)) . $salt;  
+      $pass     = /*md5(*/htmlEncode($pass);//) . $salt;  
       $pass_mem = htmlEncode($pass_mem); 
       $secret   = htmlEncode($secret);  
+      
+      $ap_username = $username;//"first try";
+      $ap_pass     = $pass;//"JOHNNY";
+      $ap_email    = $email;//"stuey@yahoo.com";
 
-      add_registered_user($username, $email, $pass);
+      add_player($ap_username, $ap_pass, $ap_email);
+      
       redirect_user(thank_you);
      
       }
