@@ -4,18 +4,16 @@
 	<p id="warningMsg"></p>
 	<p style="margin-bottom:50px;">Sign up for a free <a class="highlight-links" href='register.php'>account</a> to start playing.</p>
 	
-  	
-    <video id="camera"></video>
+  <div class="video-container">   
+      <video id="introvideo" width="50%" height="340px" controls="controls"/>
+      <video src=""/>
+      <video poster="http://localhost/Shooterz/images/poster.jpeg"/> 
+      Your browser does not support the video tag.
+      </video>
+  </div>
 
-    <div class="video-controls">
-  		<button id="play"><img src="images/play-button.png"/></button>
-    	<button id="pause"><img src="images/pause-button.png"/></button>
-      <button id="stop"></button--><!--Causes error in script/won't restart video after pressed-->
-    </div><!--video controls-->
-
-    <span class="web-glyphs"></span>
-    
+   
 <?php include ("footer-nav.php");?>
   
 
-<?php include("footer.php"); ?>
+<?php include("footer.php");?>

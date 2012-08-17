@@ -20,15 +20,14 @@ if ( isset($_POST['login_name']) || isset($_POST['login_pass']) ) {
 	$login_errors = array();
 
 	if ( empty($login_name) || empty($login_pass) ) {
-    	  $login_errors[]  = "All fields are required."; 
+    	  $login_errors[]  = "PLEASE TRY TO SIGN IN AGAIN"; 
     }
     if (!empty($login_errors)) {
-      
-      echo "<ul class='error-messages'>";     
+      echo "<div class='wrong'>";     
         foreach ($login_errors as $errors) {
-      	    echo "<li>" . "*" . $errors . "</li>";
-        }
-      echo "</ul>";
+      	    echo  $errors;
+        }       
+      echo "</div>";
   	
   	} else {
       
@@ -36,16 +35,8 @@ if ( isset($_POST['login_name']) || isset($_POST['login_pass']) ) {
       $login_name =  htmlEncode($login_name);
       $login_pass =  htmlEncode($login_pass);
 
-      // CONNECT TO DATABASE & CHECK IF USER AND PASS EXIST USING PREPARED STATEMENTS
+      //CONNECT TO DB & CHECK NAME & PW THEN REDIRECT TO FIND MATCH 
       validate_login($login_name, $login_pass);
-      
-      //CLOSE DATABASE CONNECTION
-          //DONE
-      //IF PASS EXISTS REDIRECT USER
-      //header('Location:find_match.php');
-      //IF IT DOESNT EXIST->REPORT ERROR
-         //DONE
-
     }
 }
 

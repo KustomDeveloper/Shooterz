@@ -38,6 +38,11 @@ body{
 td{
   font-weight:bold;
 }
+#introvideo{
+  padding:20px;
+  background:#000;
+  @include border-radius(15px);
+}
 @font-face {
     font-family: 'EntypoRegular';
     src: url('../fonts/entypo-webfont.eot');
@@ -165,12 +170,9 @@ color:#ccc;
   position:absolute;
   top:-60px;
 }
-
-/*===================================
+/*====================================================
       VIDEO STYLES
-===================================*/
-
-
+====================================================*/
 #camera{
   display:block;
   width:300px;
@@ -199,11 +201,9 @@ color:#ccc;
   right:31%;
   top:120px;
 }
-/*===================================
+/*====================================================
       FOOTER STYLES
-===================================*/
-
-
+====================================================*/
 #footer{
   position:relative;
   width:100%;
@@ -265,9 +265,9 @@ color:#ccc;
   color:$color1;
   
 }
-/*============================================
+/*====================================================
         REGISTRATION STYLES
-============================================*/
+====================================================*/
 
 .register{
   margin-top:200px;
@@ -349,9 +349,9 @@ color:#ccc;
   }
 }
 
-/*============================================
+/*====================================================
         GAMEPAGE STYLES
-============================================*/
+====================================================*/
 #main-app{
   margin-top:100px;
 
@@ -432,9 +432,9 @@ color:#ccc;
   font-size:60px;
 
 }
-/*=============================
+/*====================================================
       CHATBOX STYLES
-/*=============================*/
+/*====================================================*/
 #chatbox{
   height:200px;
   width:320px;
@@ -459,14 +459,31 @@ color:#ccc;
 }
 #shout{
   margin:10px 0px;
-   background:$color5;
-   color: $color4;
+  background:$color5;
+  color: $color4;
   font-size:16px;
   font-weight: bold;
   @include border-radius(25px);
   border:3px solid $color5;
   padding:10px 25px;
   display:block;
+}
+/*====================================================
+      MODAL WINDOW
+/*====================================================*/
+.wrong{
+  position:absolute;
+  right:0px;
+  z-index:99999999;
+  min-width:320px;
+  color:$color4;
+  font-weight:bold;
+  text-align:center;
+  padding:20px;
+  border:solid 15px #e3e3e3;
+  @include border-radius(25px);
+  background:black;
+  @include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
 }
 
 

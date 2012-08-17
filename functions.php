@@ -77,13 +77,15 @@ function validate_login($login_name, $login_pass) {
   $count = $stmt->fetchColumn();
   
     if ($count > 0) {
-      echo "<br/><br/><br/>" . "YOU ARE NOW LOGGED IN!!!";
+
+    redirect_user(find_match);
       
     } else {
-      echo "<br/><br/><br/>". "INCORRECT USERNAME OR PASSWORD";  
-    }
+      echo "<div class='wrong'>";
+      echo "INCORRECT USERNAME OR PASSWORD";  
+    } echo "</div>";
     
- // $stmt->closeCursor();
+  $stmt->closeCursor();
 
 }
 
@@ -127,8 +129,17 @@ function add_player ($ap_username, $ap_pass, $ap_email) {
 }
 
 /*========================================================================
-			My next function
+			Modal Window
 =========================================================================*/
+
+//function modal_window(){
+
+//echo "<script type=\"text/javascript\">
+ //     window.open('http://localhost/shooterz.php','mywindow','width=570,height=200');
+ //     </script>";  
+//}
+
+
 ?>
 
 
