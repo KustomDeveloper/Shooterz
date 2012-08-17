@@ -17,26 +17,26 @@ if ( isset($_POST['username']) || isset($_POST['email']) || isset($_POST['pass']
 	$terms     = (!empty($_POST['tos']) ? $_POST['tos'] : null);
 	
       if ( empty($username) || empty($email) || empty($pass) || empty($pass_mem) || empty($secret) ) {
-    	  $status[]  = "All fields are required."; 
+    	  $status[]  = "All fields are required"; 
       } else {
       
       if (strlen($username) < 5 || strlen($username) > 25) {
-        $status[] = "Username must be 5-25 characters.";
+        $status[] = "Username must be 5-25 characters";
       }
       if ( !valid_email($email) ) {
-      	$status[] = "Please provide a valid email address.";	
+      	$status[] = "Please provide a valid email address";	
       }	
       if (strlen($pass) < 5 || strlen($pass) > 25) {
-        $status[] = "Password must be 5-25 characters long.";
+        $status[] = "Password must be 5-25 characters long";
       }
       if ($pass != $pass_mem) {
-      	$status[] = "Your passwords do not match." . "<br/>";
+      	$status[] = "Your passwords do not match" . "<br/>";
       }
       if ( $secret != 8 ) {
-      	$status[] = "Please provide a valid answer to the math question.";
+      	$status[] = "Please provide a valid answer to the math question";
       } 
       if ( !isset($terms) && $terms != 'true' ) {
-        $status[] = "You must agree to the Terms of Service.";
+        $status[] = "You must agree to the Terms of Service";
       }
     
     }
@@ -46,7 +46,7 @@ if ( isset($_POST['username']) || isset($_POST['email']) || isset($_POST['pass']
       
       foreach ($status as $error) {
         
-        echo "<li>" . "*" . $error . "</li>";
+        echo "<li>" . " * " . $error . "</li>";
       }
 
       echo "</ul>";

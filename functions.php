@@ -82,7 +82,7 @@ function validate_login($login_name, $login_pass) {
       
     } else {
       echo "<div class='wrong'>";
-      echo "INCORRECT USERNAME OR PASSWORD";  
+      echo " * ". "INCORRECT USERNAME OR PASSWORD";  
     } echo "</div>";
     
   $stmt->closeCursor();

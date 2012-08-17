@@ -25,7 +25,7 @@ if ( isset($_POST['login_name']) || isset($_POST['login_pass']) ) {
     if (!empty($login_errors)) {
       echo "<div class='wrong'>";     
         foreach ($login_errors as $errors) {
-      	    echo  $errors;
+      	    echo  " * " . $errors;
         }       
       echo "</div>";
   	

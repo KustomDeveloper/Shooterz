@@ -45,6 +45,7 @@ td{
   background-size: 1000px;
   background-position:center;
   @include border-radius(15px);
+  border:10px solid $color5;
 }
 @font-face {
     font-family: 'EntypoRegular';
@@ -273,7 +274,7 @@ color:#ccc;
 ====================================================*/
 
 .register{
-  margin-top:200px;
+  margin-top:100px;
   padding:15px;
   width:50%;
    .notice{
@@ -322,10 +323,22 @@ color:#ccc;
     }
   }
   .error-messages{
-    color:red;
+    z-index:99999999;
+    min-width:320px;
+    color:$color4;
+    font-weight:bold;
+    text-align:center;
+    padding:20px;
+    border:solid 15px #e3e3e3;
+    @include border-radius(25px);
+    background:black;
+    @include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+    color:$color4;
+    background:#000;
     font-style:italic;
     position:absolute;
-    top:80px;
+    top:600px;
+    
     li{
       margin:10px;
     }
@@ -480,6 +493,7 @@ color:#ccc;
   z-index:99999999;
   min-width:320px;
   color:$color4;
+  font-style:italic;
   font-weight:bold;
   text-align:center;
   padding:20px;
