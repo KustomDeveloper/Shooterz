@@ -7,7 +7,7 @@
   <div class="video-container">   
       <video id="introvideo" width="50%" height="340px" controls="controls"/>
       <video src=""/>
-      <video poster="http://localhost/Shooterz/images/poster.jpeg"/> 
+      <video poster="http://localhost/Shooterz/images/poster.jpg"/> 
       Your browser does not support the video tag.
       </video>
   </div>

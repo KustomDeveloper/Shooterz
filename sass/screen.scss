@@ -41,6 +41,9 @@ td{
 #introvideo{
   padding:20px;
   background:#000;
+  background-image: url('http://localhost/Shooterz/images/poster.jpg');
+  background-size: 1000px;
+  background-position:center;
   @include border-radius(15px);
 }
 @font-face {
@@ -469,7 +472,7 @@ color:#ccc;
   display:block;
 }
 /*====================================================
-      MODAL WINDOW
+      Validation Errors
 /*====================================================*/
 .wrong{
   position:absolute;
