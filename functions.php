@@ -82,7 +82,7 @@ function validate_login($login_name, $login_pass) {
       
     } else {
       echo "<div class='wrong'>";
-      echo " * ". "INCORRECT USERNAME OR PASSWORD";  
+      echo " * ". "Incorrect username or password";  
     } echo "</div>";
     
   $stmt->closeCursor();
@@ -124,21 +124,25 @@ function add_player ($ap_username, $ap_pass, $ap_email) {
   $email    = $ap_email; 
         
   $db->execute();
-  
+  $db->closeCursor();
 
 }
 
 /*========================================================================
-			Modal Window
+			GAME UI FUNCTION 
 =========================================================================*/
+function add_gameui() {
 
-//function modal_window(){
-
-//echo "<script type=\"text/javascript\">
- //     window.open('http://localhost/shooterz.php','mywindow','width=570,height=200');
- //     </script>";  
-//}
-
+    echo "<div class='game-ui'>";
+    
+    echo      "<p class='game-title'>Shot Count</p>";
+    echo      "<p class='my-score'>0</p>";
+    echo      "<button id=plus class='plus' style=font-size:18px;>+</button>";
+    echo      "<button id=minus class='minus'style=font-size:18px;>-</button>";         
+    echo      "<p id='counter'>Reset Counter</p>";
+    
+    echo  "</div>";
+}
 
 ?>
 

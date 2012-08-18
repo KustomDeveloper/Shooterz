@@ -8,44 +8,34 @@
 
     <div id="adspace-one">Place Your Ad Here.</div>
 
-<video id="camera"></video>
+      <div class="opponent-1">
+      <video class="camera"></video>
 
         <div class="video-controls">
-  	    	<button id="play"><img src="images/play-button.png"/></button>
-        	<button id="pause"><img src="images/pause-button.png"/></button>
+  	    	<button id="play">{</button>
+        	<button id="pause">|</button>
           <button id="stop"></button <!--Causes error in script-->
 
        </div><!--video controls-->  
-
-       <div class="opponent">
+       </div><!--Opponent-1 class-->
        
-       <video id="camera"></video>
+       <div class="opponent-2">
+       
+       <video class="camera"></video>
 
         <div class="video-controls">
-  	    	<button id="play"><img src="images/play-button.png"/></button>
-        	<button id="pause"><img src="images/pause-button.png"/></button>
-            <button id="stop"></button <!--Causes error in script-->
+  	    	<button id="play">{</button>
+        	<button id="pause">|</button>
+          <button id="stop"></button <!--Causes error in script-->
         </div><!--video controls-->    
     
-       </div><!--Opponent class-->  
+       </div><!--Opponent-2 class-->  
 
-        <span id="drink-count">Shot Count</span>
+       <?php add_gameui(); ?>
 
-		<div id="score-box">
-
-			<span class="my-score">0</span>
-			<button class="plus">+</button>
-			<button class="minus">-</button>
-		
-		</div><!--End scorebox-->
-
-		<span id="reset-counter">Reset Counter</span>
-
-
+  
 <?php include ("comment.php");?>
  
-
 <?php include ("footer-nav.php");?>
   
-
 <?php include("footer.php"); ?>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!--<meta http-equiv="refresh" content="3">-->
+  <!--<meta http-equiv="refresh" content="30">-->
   <meta charset="utf-8">
   <title>Shooterz | Online Quarters Game</title>
   <meta name="description" content="Online Quarters">
@@ -25,6 +25,7 @@
 <body>
   
   <div id="loginbar">
+     <?php include("login.php"); ?>
   </div><!--End loginbar-->
   
   <div id="branding">
@@ -32,9 +33,11 @@
   
   <div class="texture"></div>
 
-  <div id="wrapper">
+  <div class="grid">
+
+  <div class="col-2-3">
    
-  <?php include("login.php"); ?>
+ 
   
   <?php include ("nav.php"); ?>
 

@@ -74,8 +74,15 @@ td {
 }
 
 /* line 41, ../sass/screen.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 46, ../sass/screen.scss */
 #introvideo {
-  padding: 20px;
+  padding: 20px 20px 1% 20px;
   background: #000;
   background-image: url("http://localhost/Shooterz/images/poster.jpg");
   background-size: 1000px;
@@ -96,89 +103,142 @@ td {
   font-style: normal;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .web-glyphs {
   font-family: 'EntypoRegular';
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .highlight {
   color: red;
   line-height: 1.5;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .nav {
   position: absolute;
-  top: -30px;
-  right: 20px;
+  top: 80px;
+  right: 15%;
 }
-/* line 73, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .nav ul li {
   display: inline-block;
   margin-left: 5px;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .nav a {
   text-decoration: none;
   color: white;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .nav ul li a:hover {
   color: #ccc;
 }
 
-/* line 86, ../sass/screen.scss */
-#wrapper {
-  position: relative;
-  min-height: 800px;
-  width: 65%;
-  padding: 20px;
+/* line 91, ../sass/screen.scss */
+.grid {
   margin: auto;
+  padding: 0 15%;
+}
+/* line 94, ../sass/screen.scss */
+.grid .col-2-3 {
+  padding: 20px 0px;
+  min-height: 800px;
+  width: 66.66%;
   font-family: "Open Sans", sans-serif, "trebuchet ms", georgia;
   color: #333333;
 }
-/* line 94, ../sass/screen.scss */
-#wrapper h1 {
+/* line 100, ../sass/screen.scss */
+.grid .col-2-3 h1 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 99, ../sass/screen.scss */
-#wrapper p {
+/* line 105, ../sass/screen.scss */
+.grid .col-2-3 p {
   font-size: 22px;
   margin-bottom: 20px;
   line-height: 1.3;
 }
+/* line 111, ../sass/screen.scss */
+.grid .col-1-3 {
+  width: 33.33%;
+  min-height: 800px;
+  padding-right: 15%;
+}
+/* line 116, ../sass/screen.scss */
+.grid .col-1-2 {
+  width: 50%;
+}
+/* line 119, ../sass/screen.scss */
+.grid .col-1-4 {
+  width: 25%;
+}
+/* line 122, ../sass/screen.scss */
+.grid .col-1-8 {
+  width: 12.5%;
+}
 
-/* line 106, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
+.grid-pad {
+  padding: 20px 0px 20px 20px;
+}
+
+/* line 130, ../sass/screen.scss */
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+/* line 133, ../sass/screen.scss */
+[class*='col-'] {
+  float: left;
+}
+
+/* line 136, ../sass/screen.scss */
+[class*='col-'] {
+  padding-right: 20px;
+}
+
+/* line 139, ../sass/screen.scss */
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+/* line 142, ../sass/screen.scss */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 147, ../sass/screen.scss */
 #loginbar {
   width: 100%;
   height: 35px;
   background: #d76532;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .login {
   position: relative;
   z-index: 9999;
 }
-/* line 114, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .login ul {
   position: absolute;
-  right: 0px;
-  top: -120px;
+  right: 15%;
+  top: 5px;
 }
-/* line 118, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .login ul li {
   font-size: 16px;
   color: white;
   font-weight: bold;
   display: inline;
 }
-/* line 123, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .login ul li input {
   color: white;
   padding: 1px 6px 1px 6px;
@@ -193,7 +253,7 @@ td {
   border: none;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .webicons {
   font-family: 'EntypoRegular';
   font-size: 48px;
@@ -204,7 +264,7 @@ td {
   left: -35px;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .sendlogin {
   font-size: 9px !important;
   background: #333333;
@@ -222,21 +282,21 @@ td {
   top: -2px;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .sendlogin:hover {
   color: white !important;
   border: 2px solid white !important;
   cursor: pointer;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #branding {
   width: 100%;
   height: 70px;
   background: #333;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .texture {
   width: 100%;
   height: 10px;
@@ -244,21 +304,23 @@ td {
   position: absolute;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .logo {
   position: absolute;
-  top: -60px;
+  top: 45px;
+  left: 14%;
 }
 
 /*====================================================
       VIDEO STYLES
 ====================================================*/
-/* line 180, ../sass/screen.scss */
-#camera {
-  display: block;
+/* line 222, ../sass/screen.scss */
+.camera {
+  display: inline;
   width: 300px;
   height: 225px;
   border: 20px solid #333333;
+  margin: 0;
   -moz-border-radius-topleft: 30px;
   -webkit-border-top-left-radius: 30px;
   -ms-border-top-left-radius: 30px;
@@ -269,11 +331,16 @@ td {
   -ms-border-top-right-radius: 30px;
   -o-border-top-right-radius: 30px;
   border-top-right-radius: 30px;
+  -webkit-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .video-controls {
   position: relative;
+  top: -2px;
+  margin-bottom: 15px;
   height: 30px;
   width: 300px;
   background: #333333;
@@ -290,36 +357,49 @@ td {
   border-bottom-right-radius: 30px;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 #play, #pause, #stop {
   position: absolute;
-  border: none;
   background: none;
+  border: none;
+  font-family: 'EntypoRegular';
+  color: white;
+  font-size: 50px !important;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #play {
-  bottom: -10px;
-  left: 70px;
+  bottom: 0px;
+  left: 80px;
+  padding: 0px 5px;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 #pause {
-  bottom: -10px;
-  left: 130px;
+  bottom: 0px;
+  left: 140px;
+  padding: 0px 5px;
 }
 
-/* line 203, ../sass/screen.scss */
-.opponent {
-  position: absolute;
-  right: 31%;
-  top: 120px;
+/* line 252, ../sass/screen.scss */
+.opponent-1 {
+  float: left;
+}
+
+/* line 255, ../sass/screen.scss */
+.opponent-2 {
+  float: right;
 }
 
 /*====================================================
       FOOTER STYLES
 ====================================================*/
-/* line 211, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #footer {
   position: relative;
   width: 100%;
@@ -327,39 +407,39 @@ td {
   background: #333;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .footer-logo {
   position: absolute;
-  bottom: -210px;
-  left: 40px;
+  bottom: -150px;
+  left: 14%;
   z-index: 999999;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .footer-nav {
   position: absolute;
-  bottom: -180px;
-  right: 20px;
+  bottom: -115px;
+  right: 15%;
   z-index: 9999;
 }
-/* line 229, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .footer-nav ul li {
   display: inline-block;
   margin-left: 5px;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .footer-nav a {
   text-decoration: none;
   color: white;
 }
 
-/* line 239, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .footer-nav a:hover {
   color: #cccccc;
 }
 
-/* line 242, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 #copyright {
   position: relative;
   color: black;
@@ -369,7 +449,7 @@ td {
   background: url("../images/dotted-lg.png") repeat-x;
   z-index: 99999;
 }
-/* line 250, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 #copyright span {
   position: absolute;
   top: 15px;
@@ -377,18 +457,18 @@ td {
   font-family: "Open Sans", sans-serif, "trebuchet ms", georgia;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .tagline {
   margin: 80px 0px;
 }
 
-/* line 263, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 #warningMsg {
   color: red;
   z-index: 999999;
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .highlight-links {
   font-weight: bold;
   color: #d76532;
@@ -397,30 +477,30 @@ td {
 /*====================================================
         REGISTRATION STYLES
 ====================================================*/
-/* line 276, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .register {
   margin-top: 100px;
   padding: 15px;
   width: 50%;
 }
-/* line 280, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .register .notice {
   color: inherit;
   font-weight: bold;
 }
-/* line 283, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 .register .notice span {
   padding: 10px;
   font-family: 'EntypoRegular';
   font-size: 40px;
   color: red;
 }
-/* line 290, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 .register .invalid_field {
   margin-left: 20px;
   color: red;
 }
-/* line 294, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .register label {
   display: block;
   width: 180px;
@@ -428,7 +508,7 @@ td {
   margin: 8px 4px 6px 4px;
   text-align: left;
 }
-/* line 302, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .register input {
   margin: 5px 0px;
   color: white;
@@ -443,24 +523,24 @@ td {
   box-shadow: none;
   border: none;
 }
-/* line 312, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .register input:focus {
   border: none;
   box-shadow: none;
 }
 
-/* line 317, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 .terms {
   color: #d76532;
 }
-/* line 319, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .terms a {
   font-weight: bold;
   font-style: italic;
   color: #333333;
 }
 
-/* line 325, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 .error-messages {
   z-index: 99999999;
   min-width: 320px;
@@ -482,14 +562,20 @@ td {
   background: #000;
   font-style: italic;
   position: absolute;
-  top: 600px;
+  top: 700px;
+  left: 17.5%;
 }
-/* line 342, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 .error-messages li {
   margin: 10px;
 }
 
-/* line 346, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
+.buttonwrap {
+  position: relative;
+}
+
+/* line 400, ../sass/screen.scss */
 #regi-button {
   margin: 20px 0px;
   font-size: 16px;
@@ -501,22 +587,22 @@ td {
   -o-border-radius: 35px;
   border-radius: 35px;
   border: none;
-  padding: 8px 20px;
+  padding: 8px 25px;
   background: #333333;
 }
 
-/* line 356, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 #regi-button:hover {
   font-weight: bold;
   cursor: pointer;
   background: #d76532;
 }
 
-/* line 361, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 .terms-statement {
   margin-top: 100px;
 }
-/* line 363, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .terms-statement p {
   font-size: 16px !important;
 }
@@ -524,12 +610,7 @@ td {
 /*====================================================
         GAMEPAGE STYLES
 ====================================================*/
-/* line 371, ../sass/screen.scss */
-#main-app {
-  margin-top: 100px;
-}
-
-/* line 375, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 #adspace-one {
   height: 80px;
   border: 1px dashed #ccc;
@@ -541,107 +622,73 @@ td {
   text-align: center;
 }
 
-/* line 387, ../sass/screen.scss */
-#drink-count {
+/* line 435, ../sass/screen.scss */
+.game-ui {
   position: absolute;
-  top: 120px;
-  right: 1.5%;
-  padding: 20px 46px;
-  font-size: 20px;
+  right: 15%;
+  top: 225px;
+  text-align: center;
   font-weight: bold;
+  color: white;
   background: #333333;
+  padding: 10px 50px 0px 50px;
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
   -ms-border-radius: 35px;
   -o-border-radius: 35px;
   border-radius: 35px;
-  color: white;
+  -webkit-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-
-/* line 398, ../sass/screen.scss */
-#reset-counter {
-  position: absolute;
-  top: 380px;
-  right: 1.5%;
-  padding: 10px 35px;
-  font-size: 20px;
-  font-weight: bold;
-  background: #333333;
+/* line 446, ../sass/screen.scss */
+.game-ui .game-title {
+  font-size: 30px !important;
+}
+/* line 449, ../sass/screen.scss */
+.game-ui .my-score {
+  color: white;
+  font-size: 60px !important;
+}
+/* line 453, ../sass/screen.scss */
+.game-ui button {
+  padding: 5px 12px;
+  margin: 0px 5px 20px;
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
   -ms-border-radius: 35px;
   -o-border-radius: 35px;
   border-radius: 35px;
+  border: 2px solid white;
+  background: #333333;
   color: white;
+  -webkit-box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  -moz-box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-
-/* line 409, ../sass/screen.scss */
-#reset-counter:hover {
+/* line 462, ../sass/screen.scss */
+.game-ui #counter {
+  border: 4px solid white;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  border-radius: 35px;
+  padding: 5px 10px;
   background: #d76532;
-  cursor: pointer;
-}
-
-/* line 413, ../sass/screen.scss */
-#score-box {
-  position: absolute;
-  top: 200px;
-  right: 1.5%;
-  padding: 50px 90px 50px 90px;
-  background: #333333;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
-  border-radius: 35px;
-}
-/* line 420, ../sass/screen.scss */
-#score-box .plus, #score-box .minus {
-  position: absolute;
-  width: 40px;
-  font-size: 35px;
-  color: white;
-}
-/* line 426, ../sass/screen.scss */
-#score-box button {
-  padding: 0px 2px;
-  background: #d76532;
-  border: 3px solid white;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
-  border-radius: 35px;
-}
-/* line 432, ../sass/screen.scss */
-#score-box button:hover {
-  background: #333;
-  cursor: pointer;
-}
-/* line 436, ../sass/screen.scss */
-#score-box .plus {
-  right: 20px;
-  top: 35px;
-}
-/* line 440, ../sass/screen.scss */
-#score-box .minus {
-  right: 20px;
-  top: 90px;
-}
-
-/* line 445, ../sass/screen.scss */
-.my-score {
-  color: white;
-  font-weight: bold;
-  font-size: 60px;
+  font-size: 16px;
+  -webkit-box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  -moz-box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
 
 /*====================================================
       CHATBOX STYLES
 /*====================================================*/
-/* line 454, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 #chatbox {
   height: 200px;
-  width: 320px;
+  width: 300px;
   line-height: 1.2;
   padding: 5px;
   margin: 15px 0px;
@@ -656,10 +703,10 @@ td {
   overflow-y: scroll;
 }
 
-/* line 466, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 #textform {
   height: 50px;
-  width: 320px;
+  width: 300px;
   padding: 5px;
   border: 3px solid #333333;
   -webkit-border-radius: 10px;
@@ -672,7 +719,7 @@ td {
   font-size: 14px;
 }
 
-/* line 476, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 #shout {
   margin: 10px 0px;
   background: #333333;
@@ -692,13 +739,15 @@ td {
 /*====================================================
       Validation Errors
 /*====================================================*/
-/* line 490, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .wrong {
   position: absolute;
-  right: 0px;
+  right: 15%;
+  top: 120px;
   z-index: 99999999;
   min-width: 320px;
   color: white;
+  font-family: "Open Sans", sans-serif, "trebuchet ms", georgia;
   font-style: italic;
   font-weight: bold;
   text-align: center;
@@ -713,4 +762,15 @@ td {
   -webkit-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+}
+
+/* line 527, ../sass/screen.scss */
+.ecommerce-button {
+  background: #333;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 5px solid #fff;
+  font-family: georgia;
+  color: #fff;
 }

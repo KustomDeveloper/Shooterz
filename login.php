@@ -20,7 +20,7 @@ if ( isset($_POST['login_name']) || isset($_POST['login_pass']) ) {
 	$login_errors = array();
 
 	if ( empty($login_name) || empty($login_pass) ) {
-    	  $login_errors[]  = "PLEASE TRY TO SIGN IN AGAIN"; 
+    	  $login_errors[]  = "Please try to sign in again"; 
     }
     if (!empty($login_errors)) {
       echo "<div class='wrong'>";     
