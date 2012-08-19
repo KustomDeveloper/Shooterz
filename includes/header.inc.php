@@ -19,16 +19,27 @@
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
- <?php require("functions.php"); ?>
- <?php include("videoscript.php"); ?>
+ <?php require("includes/functions.inc.php"); ?>
+ <?php include("includes/videoscript.inc.php"); ?>
 </head>
 <body>
   
   <div id="loginbar">
-     <?php include("login.php"); ?>
+     <?php include("includes/login.inc.php"); ?>
   </div><!--End loginbar-->
   
   <div id="branding">
+    <div class="logo"><img src="images/shooterz-comic-logo.png" width="250px"height="143px"/></div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="register.php">| Register</a></li>
+        <li><a href="about.php">| About</a></li>
+        <li><a href="faq.php">| Faq</a></li>
+        <li><a href="contact.php">| Contact</a></li>
+      </ul>
+    </div>
+  
   </div><!--End branding-->
   
   <div class="texture"></div>
@@ -37,9 +48,6 @@
 
   <div class="col-2-3">
    
- 
-  
-  <?php include ("nav.php"); ?>
 
 
   

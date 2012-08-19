@@ -10,26 +10,12 @@
   $color5:#333;//matte black
   $color6:#F0F0F0;//greyish white
 
-//borders
-  
-  $border1:3px solid;
-  $border2:3px dashed;
-  $border3:3px dotted;
-
-//margins
- 
-  $margin1:10px;
-  $margin2:20px;
-  $margin3:30px;
-
 //font sizes
-  
   $one:36px;
   $two:22px;
   $three:16px;
 
 //font families
- 
   $fontfam:'Open Sans', sans-serif,"trebuchet ms",georgia;
 
 body{
@@ -74,6 +60,7 @@ td{
   position:absolute;
   top:80px;
   right:15%;
+  font-family: $fontfam;
   ul{
     li{
       display:inline-block;
@@ -89,7 +76,6 @@ td{
 color:#ccc;
 } 
 .grid{
-  margin:auto;
   padding:0 15%;
   .col-2-3{
     padding:20px 0px ;
@@ -100,11 +86,11 @@ color:#ccc;
       h1{
         font-size:$one;
         font-weight:bold;
-        margin-bottom:$margin2;
+        margin-bottom:20px;
       }
       p{
         font-size:$two;
-        margin-bottom:$margin2;
+        margin-bottom:20px;
         line-height:1.3;
       }
   }
@@ -150,6 +136,7 @@ color:#ccc;
   background:$color1;
 }
 .login{ 
+  font-family: $fontfam;
   position:relative;
   z-index:9999;
    ul{
@@ -204,6 +191,7 @@ color:#ccc;
   width:100%;
   height:70px;
   background:#333;
+  font-family: $fontfam;
 }
 .texture{
   width:100%;
@@ -215,6 +203,7 @@ color:#ccc;
   position:absolute;
   top:45px;
   left:14%;
+  z-index:999999;
 }
 /*====================================================
       VIDEO STYLES
@@ -254,6 +243,7 @@ color:#ccc;
 }
 .opponent-2{
   float:right;
+  margin-right:5%;
 }
 /*====================================================
       FOOTER STYLES
@@ -266,15 +256,16 @@ color:#ccc;
 }
 .footer-logo{
   position:absolute;
-  bottom:-150px;
+  bottom:-15px;
   left:14%;
   z-index:999999;
 }
 .footer-nav{
   position:absolute;
-  bottom:-115px;
+  bottom:10px;
   right:15%;
   z-index:9999;
+  font-family: $fontfam;
   ul{
     li{
       display:inline-block;
@@ -326,7 +317,7 @@ color:#ccc;
 .register{
   margin-top:100px;
   padding:15px;
-  width:50%;
+  width:500px;
    .notice{
       color:inherit;
       font-weight:bold;
@@ -417,6 +408,74 @@ color:#ccc;
   p{
      font-size:16px !important;
   }
+}
+/*====================================================
+        CONTACT FORM
+====================================================*/
+.contactAdmin{
+  position:relative;
+  margin:50px auto;
+  font-family: $fontfam;
+  label{
+    font-size:20px;
+    font-style: italic;
+    font-weight:bold;
+    margin:5px 0px;
+    width:500px;
+  }
+  ul{
+    li{
+      margin:5px 0px;
+      }
+  }
+}
+.con_name,.con_email,.con_text{
+  background: $color5;
+  padding:3px 10px;
+  color:$color4;
+  font-weight:normal;
+  font-size:16px;
+  width:250px;
+  height:35px;
+  border:none;
+  @include border-radius(15px);
+}
+.con_text{
+  height:100px;
+  width:400px;
+  font-family: $fontfam;
+}
+.con_submit{
+   @include border-radius(15px);
+   background: $color5;
+   color:$color4;
+   font-weight:bold;
+   font-style:italic;
+   font-size:16px;
+   padding: 5px;
+   width:110px;
+   height:40px;
+   line-height:15px;
+   border:none;
+   margin:20px 0px;
+}
+.con_submit:hover{
+  background: $color1;
+  cursor: pointer;
+}
+.contact_glyphs{
+  position:relative;
+  top:5px;
+  font-family:'EntypoRegular';
+  font-size:60px;
+  font-style:normal;
+}
+.contact_glyphs_headline{
+  position:relative;
+  top:15px;
+  font-family:'EntypoRegular';
+  font-size:150px;
+  font-style:normal;
 }
 
 /*====================================================

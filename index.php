@@ -1,4 +1,4 @@
-<?php include("header.php"); ?>
+<?php include("includes/header.inc.php"); ?>
 
 	<h1 class="tagline">Shooterz. The online quarters game.</h1>
 	<p id="warningMsg"></p>
@@ -11,8 +11,5 @@
       Your browser does not support the video tag.
       </video>
   </div>
- 
-<?php include ("footer-nav.php");?>
-  
 
-<?php include("footer.php");?>
+<?php include("includes/footer.inc.php");?>

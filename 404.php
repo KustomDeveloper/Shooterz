@@ -15,7 +15,4 @@
 
 
 
-
-<?php include ("footer-nav.php");?>
-
 <?php include("footer.php"); ?>   

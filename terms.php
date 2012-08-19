@@ -1,5 +1,5 @@
 
-<?php include("header.php"); ?>
+<?php include("includes/header.inc.php"); ?>
 
 <div class='terms-statement'>
 
@@ -27,7 +27,5 @@
 
 </div><!--END TERMS-->
 
-<?php include ("footer-nav.php");?>
-  
 
-<?php include("footer.php"); ?>
+<?php include("includes/footer.inc.php"); ?>

@@ -2,9 +2,8 @@
 
 ?>
 
-<?php include("header.php"); ?>
+<?php include("includes/header.inc.php"); ?>
 
-<?php include ("nav.php");?>
 
     <div id="adspace-one">Place Your Ad Here.</div>
 
@@ -34,8 +33,6 @@
        <?php add_gameui(); ?>
 
   
-<?php include ("comment.php");?>
+<?php include ("includes/comment.inc.php");?>
  
-<?php include ("footer-nav.php");?>
-  
-<?php include("footer.php"); ?>
+<?php include("includes/footer.inc.php"); ?>

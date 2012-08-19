@@ -4,26 +4,12 @@
 /*==========================================
     CHAT BOX SCRIPT
 ===========================================*/  
-
+/*
 //BROKEN CHAT SCRIPT
 function chatboxScript(){
   	  
   var $j = jQuery.noConflict();
-  //var textVal = document.forms[0].textform.value,
-  //  cleanOut = $j('#textform');
-  //add a new message to chatbox
-  $j('#shout').on('click', function(e){
-    e.preventdefault;
-    var $j = jQuery.noConflict();
-    var textVal = document.forms[0].textform.value,
-    var cleanOut = $j('#textform');
-    e.preventdefault;
-    $j('#chatbox').prepend(textVal + "<br/>");
 
-  });
-    
-  //select old text and set focus in textbox
-    cleanOut.select().focus();
 }
 
 /*====================================================================
