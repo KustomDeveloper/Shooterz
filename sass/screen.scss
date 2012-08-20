@@ -446,18 +446,15 @@ color:#ccc;
   font-family: $fontfam;
 }
 .con_submit{
-   @include border-radius(15px);
-   background: $color5;
-   color:$color4;
-   font-weight:bold;
-   font-style:italic;
-   font-size:16px;
-   padding: 5px;
-   width:110px;
-   height:40px;
-   line-height:15px;
-   border:none;
-   margin:20px 0px;
+  margin: 20px 0px;
+  font-size: 16px;
+  font-weight:bold;
+  color: white;
+  @include border-radius(35px);
+  border:none;
+  padding: 6px 25px;
+  background: $color5;
+  line-height:2;
 }
 .con_submit:hover{
   background: $color1;

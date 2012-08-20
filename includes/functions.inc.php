@@ -143,6 +143,38 @@ function add_gameui() {
     
     echo  "</div>";
 }
+/*========================================================================
+      SESSION FUNCTIONS
+=========================================================================*/
+
+function session_connect() {
+  if(isset($_POST['sendlogin'])) {
+    session_start();
+  }
+}
+function session_good() {
+  $_SESSION['authenticated'] = "validConnection";
+  session_regenerate_id();
+
+}
+function session_bad() {
+  //create a dedicated login page
+  
+  //let user know what is going on
+
+  //redirect user to a dedicated login page
+}
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
 

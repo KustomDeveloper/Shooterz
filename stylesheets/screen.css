@@ -660,31 +660,28 @@ td {
 
 /* line 448, ../sass/screen.scss */
 .con_submit {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-  background: #333333;
-  color: white;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 16px;
-  padding: 5px;
-  width: 110px;
-  height: 40px;
-  line-height: 15px;
-  border: none;
   margin: 20px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  border-radius: 35px;
+  border: none;
+  padding: 6px 25px;
+  background: #333333;
+  line-height: 2;
 }
 
-/* line 462, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .con_submit:hover {
   background: #d76532;
   cursor: pointer;
 }
 
-/* line 466, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .contact_glyphs {
   position: relative;
   top: 5px;
@@ -693,7 +690,7 @@ td {
   font-style: normal;
 }
 
-/* line 473, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 .contact_glyphs_headline {
   position: relative;
   top: 15px;
@@ -705,7 +702,7 @@ td {
 /*====================================================
         GAMEPAGE STYLES
 ====================================================*/
-/* line 484, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 #adspace-one {
   height: 80px;
   border: 1px dashed #ccc;
@@ -717,7 +714,7 @@ td {
   text-align: center;
 }
 
-/* line 494, ../sass/screen.scss */
+/* line 491, ../sass/screen.scss */
 .game-ui {
   position: absolute;
   right: 15%;
@@ -736,16 +733,16 @@ td {
   -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 505, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 .game-ui .game-title {
   font-size: 30px !important;
 }
-/* line 508, ../sass/screen.scss */
+/* line 505, ../sass/screen.scss */
 .game-ui .my-score {
   color: white;
   font-size: 60px !important;
 }
-/* line 512, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 .game-ui button {
   padding: 5px 12px;
   margin: 0px 5px 20px;
@@ -761,7 +758,7 @@ td {
   -moz-box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 521, ../sass/screen.scss */
+/* line 518, ../sass/screen.scss */
 .game-ui #counter {
   border: 4px solid white;
   -webkit-border-radius: 35px;
@@ -780,7 +777,7 @@ td {
 /*====================================================
       CHATBOX STYLES
 /*====================================================*/
-/* line 533, ../sass/screen.scss */
+/* line 530, ../sass/screen.scss */
 #chatbox {
   height: 200px;
   width: 300px;
@@ -798,7 +795,7 @@ td {
   overflow-y: scroll;
 }
 
-/* line 545, ../sass/screen.scss */
+/* line 542, ../sass/screen.scss */
 #textform {
   height: 50px;
   width: 300px;
@@ -814,7 +811,7 @@ td {
   font-size: 14px;
 }
 
-/* line 555, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 #shout {
   margin: 10px 0px;
   background: #333333;
@@ -834,7 +831,7 @@ td {
 /*====================================================
       Validation Errors
 /*====================================================*/
-/* line 569, ../sass/screen.scss */
+/* line 566, ../sass/screen.scss */
 .wrong {
   position: absolute;
   right: 15%;
@@ -859,7 +856,7 @@ td {
   box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
 
-/* line 586, ../sass/screen.scss */
+/* line 583, ../sass/screen.scss */
 .ecommerce-button {
   background: #333;
   padding: 5px 15px;

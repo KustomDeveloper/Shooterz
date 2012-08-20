@@ -4,13 +4,12 @@
 /*==========================================
     CHAT BOX SCRIPT
 ===========================================*/  
-/*
-//BROKEN CHAT SCRIPT
-function chatboxScript(){
-  	  
-  var $j = jQuery.noConflict();
+  var $s = jQuery.noConflict();
+  $s('chatForm').on('submit', function(e){
+      console.log('submitted');
+      e.preventDefault();
 
-}
+  });
 
 /*====================================================================
     CHATBOX SUBMIT MESSAGE WITH ENTER BUTTON

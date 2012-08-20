@@ -20,7 +20,7 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
  <?php require("includes/functions.inc.php"); ?>
- <?php include("includes/videoscript.inc.php"); ?>
+ <?php //include("includes/videoscript.inc.php"); ?>
 </head>
 <body>
   

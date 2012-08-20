@@ -24,8 +24,5 @@
 
 <div id="copyright"><span id="copy">&copy &nbsp 2012 Shooterz.org | The Online Quarters Game</span></div>
 
-<?php require ('scripts.inc.php'); ?>
-
-
 </body>
 </html>
