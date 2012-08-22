@@ -1,7 +1,7 @@
 
 </div><!--col-2-3-->
 <div class="col-1-3">
-    
+   <h1 style="font-size:30px;"> this is my sidebar column </h1>
 </div><!--col-1-3-->
 </div><!--Grid-->
 <div id="footer">

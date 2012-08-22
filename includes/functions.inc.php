@@ -137,9 +137,9 @@ function add_gameui() {
     
     echo      "<p class='game-title'>Shot Count</p>";
     echo      "<p class='my-score'>0</p>";
-    echo      "<button id=plus class='plus' style=font-size:18px;>+</button>";
-    echo      "<button id=minus class='minus'style=font-size:18px;>-</button>";         
-    echo      "<p id='counter'>Reset Counter</p>";
+    echo      "<button id=minus class='minus'style=font-size:18px;>-</button>";     
+     echo      "<button id=plus class='plus' style=font-size:18px;>+</button>";    
+    echo      "<p class='counter'>Reset Counter</p>";
     
     echo  "</div>";
 }

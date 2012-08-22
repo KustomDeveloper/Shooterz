@@ -21,9 +21,10 @@
   <![endif]-->
  <?php require("includes/functions.inc.php"); ?>
  <?php //include("includes/videoscript.inc.php"); ?>
-</head>
-<body>
-  
+
+</head> <body> <noscript><div class="no-script">Your web browser must have JavaScript enabled in order
+ for this web application to display correctly.</div></noscript>
+
   <div id="loginbar">
      <?php include("includes/login.inc.php"); ?>
   </div><!--End loginbar-->

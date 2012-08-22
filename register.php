@@ -31,7 +31,10 @@
   </div>
   
   </form><!--End form-->
-
+  <script type="text/javascript">
+      var $r = jQuery.noConflict();
+      $r('.login').hide();
+  </script>
 
 <?php include("includes/footer.inc.php"); ?>   
   

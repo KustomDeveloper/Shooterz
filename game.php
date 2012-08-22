@@ -1,6 +1,4 @@
-<?php    //session start   
-
-?>
+<?php    //session start   ?>
 
 <?php include("includes/header.inc.php"); ?>
 
@@ -30,39 +28,65 @@
     
        </div><!--Opponent-2 class-->  
 
-       <?php add_gameui(); ?>
-
-  
 <?php include ("includes/comment.inc.php");?>
-
-
+<?php add_gameui(); ?>
+<div style="clear: both;"></div>
 <script type="text/javascript">
 /**************************************************
 /*****Chatbox Script
 /***************************************************/
-var $s = jQuery.noConflict();
-  $s('form').on('submit', function(e){
-     // console.log(  );
-     var message = $s(this).find('#textform').val();
-     $s('#chatbox').prepend(message + "<br/>");
-      e.preventDefault();
-      //highlight text after message is sent
-      //make enter send message when input field is in focus
+var $j = jQuery.noConflict();
+var score = '0';
 
+  $j('.login').hide();
+  $j('form').on('submit', function(e){
+     var message = $j(this).find('#textform').val();
+     $j('#chatbox').prepend(message + "<br/>");
+      e.preventDefault();
+      $j('#textform').val('').focus();
   });
+
 /**************************************************
 /*****Shotcup Script
 /***************************************************/
 //hold Shift then press ctrl to increase shot count
 //USB teensy controller hooked into event 
-var $j = jQuery.noConflict(),
-score = 0;
 
 $j(document).on('keydown', function(event) {       
   if( event.which === 17 && event.shiftKey ) {         
      $j(".my-score").text(++score);
     }
 }); 
+
+/**************************************************
+/*****FUNCTION THAT WILL
+/**** RESET THE SCORE TO 0
+/***************************************************/
+
+$j('.counter').on('click', function(){
+  //console.log('clicked!');
+   var currScore = $j('.my-score');
+   currScore.empty();
+   score = '0';
+   currScore.text('0');
+})
+
+/**************************************************
+/*****ADD A POINT
+/***************************************************/
+
+//$j('.minus').on('click', function(){
+//  var myScore = score.text().value();
+//  console.log(myScore);
+
+//});
+
+
+
+
+/**************************************************
+/*****REMOVE A POINT
+/***************************************************/
 </script>
  
 <?php include("includes/footer.inc.php"); ?>
