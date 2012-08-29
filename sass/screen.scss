@@ -11,7 +11,7 @@
   $color6:#F0F0F0;//greyish white
 
 //font sizes
-  $one:36px;
+  $one:32px;
   $two:22px;
   $three:16px;
 
@@ -20,6 +20,9 @@
 
 body{
   background:$color4;
+}
+img, video{
+  max-width: 100%;
 }
 .no-script{
   width:22em; 
@@ -312,7 +315,7 @@ color:#ccc;
 }
 
 .tagline{
-  margin:80px 0px;
+  margin:100px 0px;
 }
 
 #warningMsg{
@@ -329,8 +332,6 @@ color:#ccc;
 ====================================================*/
 
 .register{
-  margin-top:100px;
-  padding:15px;
   width:500px;
    .notice{
       color:inherit;
@@ -342,6 +343,7 @@ color:#ccc;
           color:red;
         }
     }
+    
       .invalid_field{
         margin-left:20px;
         color:red;

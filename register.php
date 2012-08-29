@@ -7,7 +7,7 @@
   <form action="" method="post">
  
 	<div class="register">
-      <h1 style="font-size:24px;">New user registration form</h1><br/><br/><br/>
+      <h1 style='margin:100px 0px 80px 0px;padding:0;font-size:28px;'>New user registration form</h1>
 
       <label for="username">Choose a username:</label>
       <input type="text" class="regi-input" id="username" name="username"  size="16" value='<?php echo old("username");?>' />

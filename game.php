@@ -31,6 +31,7 @@
 <?php include ("includes/comment.inc.php");?>
 <?php add_gameui(); ?>
 <div style="clear: both;"></div>
+
 <script type="text/javascript">
 /**************************************************
 /*****Chatbox Script
@@ -64,29 +65,41 @@ $j(document).on('keydown', function(event) {
 /***************************************************/
 
 $j('.counter').on('click', function(){
-  //console.log('clicked!');
+   console.log('clicked!');
    var currScore = $j('.my-score');
    currScore.empty();
    score = '0';
    currScore.text('0');
-})
+});
 
 /**************************************************
 /*****ADD A POINT
 /***************************************************/
 
-//$j('.minus').on('click', function(){
-//  var myScore = score.text().value();
-//  console.log(myScore);
-
-//});
-
-
-
+$j('.plus').on('click', function(){
+ var scoreCache = $j('.my-score');
+ var currScore = $j('.my-score').html();
+ score = ++currScore;
+ scoreCache.empty().text(score);
+});
 
 /**************************************************
 /*****REMOVE A POINT
 /***************************************************/
+
+$j('.minus').on('click', function(){
+ var scoreCache = $j('.my-score');
+ var currScore = $j('.my-score').html();
+ score = --currScore;
+ scoreCache.empty().text(score);
+});
+
+var myScore = $j('.my-score');
+if( myScore > '0' ){
+  myScore.empty().text('0');
+} else {
+  //do nothing!!
+}
 </script>
  
 <?php include("includes/footer.inc.php"); ?>
