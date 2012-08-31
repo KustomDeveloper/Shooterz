@@ -155,7 +155,6 @@ function session_connect() {
 function session_good() {
   $_SESSION['authenticated'] = "validConnection";
   session_regenerate_id();
-
 }
 function session_bad() {
   //create a dedicated login page

@@ -3,7 +3,7 @@
 <div class="login">
 	<form name="user_login" action="" method="post">
     <ul>
-      <li><span class="webicons">+</span>Sign In: </li>
+      <li class='signIn'><span class="webicons">+</span>Sign In: </li>
       <li><input type="text" name="login_name" id="login_name" size="13" placeholder="Username"></li>
       <li><input type="password" name="login_pass" id="login_pass" size="13" placeholder="Password"></li>
       <li><input type="submit" name="sendlogin" class="sendlogin" value="Log In"></li>
