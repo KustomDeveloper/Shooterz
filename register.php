@@ -26,7 +26,7 @@
       <span class="invalid_field"></span> <br/><br/>
       <input type="checkbox" style="margin:20px 20px 20px 5px ;" class="regi-input" id="tos" name="tos" value="true" /><span class="terms">Do you agree to the:<a href="terms.php"> Terms Of Service </a> ? </span><br/>
       
-      <div class="buttonwrap"><label for="submit"></label> <button id="regi-button" type="submit">Submit</button></div>
+      <div class="buttonwrap"><label for="submit"></label> <button id="regi-button" type="submit">Submit &#187</button></div>
       
   </div>
   

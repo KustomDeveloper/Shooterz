@@ -412,23 +412,21 @@ color:#ccc;
     }
   }
   .error-messages{
-    z-index:99999999;
-    min-width:320px;
-    color:$color4;
-    font-weight:bold;
-    text-align:center;
-    padding:20px;
-    border:solid 15px #e3e3e3;
-    @include border-radius(25px);
-    background:black;
-    @include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
-    color:$color4;
-    background:#000;
-    font-style:italic;
     position:absolute;
     top:700px;
     left:17.5%;
-    
+    z-index:99999999;
+    min-width:320px;
+    color:$color4;
+    background:#000;
+    font-weight:bold;
+    font-style:italic;
+    text-align:center;
+    padding:20px;
+    @include border-radius(25px);
+    border:15px solid red;
+    background:$color0;
+    @include box-shadow(0 0 50px red);
     li{
       margin:10px;
     }
@@ -458,19 +456,22 @@ color:#ccc;
   }
 }
 .resizeInput{
-  width:250px;
+  width:200px;
   color:#ccc !important;
-  min-height:50px;
+  min-height:35px;
   font-size:20px !important;
   padding:0px 20px !important;
   display:block;
   margin:20px;
   float:left;
-
 }
 .buttonResize{
-  width:120px;
+  color:#ccc !important;
+  width:100px;
+  height:25px;
+  border:none;
   margin-right:100px;
+  cursor:pointer;
 }
 .buttonResize:hover{
   background-color:$color1;
@@ -486,18 +487,16 @@ color:#ccc;
   h1{
     font-size:32px;
     color:$color1;
-    margin-top:100px;
   }
   label{
     font-size:20px;
     font-style: italic;
     font-weight:bold;
-    margin:5px 0px;
     width:500px;
   }
   ul{
     li{
-      margin:5px 0px;
+
       }
   }
 }
@@ -648,15 +647,15 @@ color:#ccc;
   z-index:99999999;
   min-width:320px;
   color:$color4;
+  background:$color0;
   font-family:$fontfam;
   font-style:italic;
   font-weight:bold;
   text-align:center;
   padding:20px;
-  border:solid 15px #e3e3e3;
+  border:10px solid red;
   @include border-radius(25px);
-  background:$color0;
-  @include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+  @include box-shadow(0 0 50px red);
 }
 .ecommerce-button{
   background: #333;

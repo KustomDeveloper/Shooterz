@@ -25,7 +25,7 @@
       
       
       <li>
-      	<input type="submit" value="SUBMIT" name="con_submit" id="con_submit" class="con_submit" />
+      	<input type="submit" value="Submit &#187" name="con_submit" id="con_submit" class="con_submit" />
       </li>
   	</ul>
     </div><!--CONTACT ADMIN-->

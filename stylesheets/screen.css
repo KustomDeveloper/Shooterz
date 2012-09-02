@@ -612,40 +612,39 @@ td {
 
 /* line 414, ../sass/screen.scss */
 .error-messages {
+  position: absolute;
+  top: 700px;
+  left: 17.5%;
   z-index: 99999999;
   min-width: 320px;
   color: white;
+  background: #000;
   font-weight: bold;
+  font-style: italic;
   text-align: center;
   padding: 20px;
-  border: solid 15px #e3e3e3;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   border-radius: 25px;
+  border: 15px solid red;
   background: black;
-  -webkit-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
-  -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
-  box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
-  color: white;
-  background: #000;
-  font-style: italic;
-  position: absolute;
-  top: 700px;
-  left: 17.5%;
+  -webkit-box-shadow: 0 0 50px red;
+  -moz-box-shadow: 0 0 50px red;
+  box-shadow: 0 0 50px red;
 }
-/* line 432, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 .error-messages li {
   margin: 10px;
 }
 
-/* line 436, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 .buttonwrap {
   position: relative;
 }
 
-/* line 439, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 #regi-button {
   margin: 20px 0px;
   font-size: 16px;
@@ -661,27 +660,27 @@ td {
   background: #333333;
 }
 
-/* line 449, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 #regi-button:hover {
   font-weight: bold;
   cursor: pointer;
   background: #d76532;
 }
 
-/* line 454, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .terms-statement {
   margin-top: 100px;
 }
-/* line 456, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .terms-statement p {
   font-size: 16px !important;
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 458, ../sass/screen.scss */
 .resizeInput {
-  width: 250px;
+  width: 200px;
   color: #ccc !important;
-  min-height: 50px;
+  min-height: 35px;
   font-size: 20px !important;
   padding: 0px 20px !important;
   display: block;
@@ -689,13 +688,17 @@ td {
   float: left;
 }
 
-/* line 471, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .buttonResize {
-  width: 120px;
+  color: #ccc !important;
+  width: 100px;
+  height: 25px;
+  border: none;
   margin-right: 100px;
+  cursor: pointer;
 }
 
-/* line 475, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .buttonResize:hover {
   background-color: #d76532;
 }
@@ -703,32 +706,26 @@ td {
 /*====================================================
         CONTACT FORM
 ====================================================*/
-/* line 482, ../sass/screen.scss */
+/* line 483, ../sass/screen.scss */
 .contactAdmin {
   position: relative;
   margin: 50px auto;
   font-family: "Open Sans", sans-serif, "trebuchet ms", georgia;
 }
-/* line 486, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 .contactAdmin h1 {
   font-size: 32px;
   color: #d76532;
-  margin-top: 100px;
 }
 /* line 491, ../sass/screen.scss */
 .contactAdmin label {
   font-size: 20px;
   font-style: italic;
   font-weight: bold;
-  margin: 5px 0px;
   width: 500px;
 }
-/* line 499, ../sass/screen.scss */
-.contactAdmin ul li {
-  margin: 5px 0px;
-}
 
-/* line 504, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .con_name, .con_email, .con_text {
   background: #333333;
   padding: 3px 10px;
@@ -745,14 +742,14 @@ td {
   border-radius: 15px;
 }
 
-/* line 515, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .con_text {
   height: 100px;
   width: 400px;
   font-family: "Open Sans", sans-serif, "trebuchet ms", georgia;
 }
 
-/* line 520, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 .con_submit {
   margin: 20px 0px;
   font-size: 16px;
@@ -769,13 +766,13 @@ td {
   line-height: 2;
 }
 
-/* line 531, ../sass/screen.scss */
+/* line 530, ../sass/screen.scss */
 .con_submit:hover {
   background: #d76532;
   cursor: pointer;
 }
 
-/* line 535, ../sass/screen.scss */
+/* line 534, ../sass/screen.scss */
 .contact_glyphs {
   position: relative;
   top: 5px;
@@ -788,7 +785,7 @@ td {
 /*====================================================
         GAMEPAGE STYLES
 ====================================================*/
-/* line 547, ../sass/screen.scss */
+/* line 546, ../sass/screen.scss */
 #adspace-one {
   height: 80px;
   border: 1px dashed #ccc;
@@ -800,7 +797,7 @@ td {
   text-align: center;
 }
 
-/* line 557, ../sass/screen.scss */
+/* line 556, ../sass/screen.scss */
 .game-ui {
   float: right;
   margin-top: 15px;
@@ -820,17 +817,17 @@ td {
   -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 569, ../sass/screen.scss */
+/* line 568, ../sass/screen.scss */
 .game-ui .game-title {
   font-size: 30px !important;
 }
-/* line 572, ../sass/screen.scss */
+/* line 571, ../sass/screen.scss */
 .game-ui .my-score {
   height: 60px;
   color: white;
   font-size: 60px !important;
 }
-/* line 577, ../sass/screen.scss */
+/* line 576, ../sass/screen.scss */
 .game-ui button {
   padding: 5px 12px;
   margin: 5px;
@@ -846,7 +843,7 @@ td {
   -moz-box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 586, ../sass/screen.scss */
+/* line 585, ../sass/screen.scss */
 .game-ui .counter {
   border: 4px solid white;
   -webkit-border-radius: 35px;
@@ -862,7 +859,7 @@ td {
   -moz-box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 595, ../sass/screen.scss */
+/* line 594, ../sass/screen.scss */
 .game-ui .counter:hover, .game-ui button:hover {
   cursor: pointer;
 }
@@ -870,12 +867,12 @@ td {
 /*====================================================
       CHATBOX STYLES
 /*====================================================*/
-/* line 602, ../sass/screen.scss */
+/* line 601, ../sass/screen.scss */
 #game-chat {
   float: left;
 }
 
-/* line 605, ../sass/screen.scss */
+/* line 604, ../sass/screen.scss */
 #chatbox {
   height: 200px;
   width: 300px;
@@ -896,7 +893,7 @@ td {
   box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
 
-/* line 618, ../sass/screen.scss */
+/* line 617, ../sass/screen.scss */
 #textform {
   height: 50px;
   width: 300px;
@@ -915,7 +912,7 @@ td {
   box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
 
-/* line 629, ../sass/screen.scss */
+/* line 628, ../sass/screen.scss */
 #shout {
   margin: 10px 0px;
   background: #333333;
@@ -938,7 +935,7 @@ td {
 /*====================================================
       Validation Errors
 /*====================================================*/
-/* line 644, ../sass/screen.scss */
+/* line 643, ../sass/screen.scss */
 .wrong {
   position: absolute;
   right: 15%;
@@ -946,24 +943,24 @@ td {
   z-index: 99999999;
   min-width: 320px;
   color: white;
+  background: black;
   font-family: "Open Sans", sans-serif, "trebuchet ms", georgia;
   font-style: italic;
   font-weight: bold;
   text-align: center;
   padding: 20px;
-  border: solid 15px #e3e3e3;
+  border: 10px solid red;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   border-radius: 25px;
-  background: black;
-  -webkit-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
-  -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
-  box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  -webkit-box-shadow: 0 0 50px red;
+  -moz-box-shadow: 0 0 50px red;
+  box-shadow: 0 0 50px red;
 }
 
-/* line 661, ../sass/screen.scss */
+/* line 660, ../sass/screen.scss */
 .ecommerce-button {
   background: #333;
   padding: 5px 15px;
