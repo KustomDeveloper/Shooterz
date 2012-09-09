@@ -706,18 +706,18 @@ td {
 /*====================================================
         CONTACT FORM
 ====================================================*/
-/* line 483, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 .contactAdmin {
   position: relative;
   margin: 50px auto;
   font-family: "Open Sans", sans-serif, "trebuchet ms", georgia;
 }
-/* line 487, ../sass/screen.scss */
+/* line 488, ../sass/screen.scss */
 .contactAdmin h1 {
   font-size: 32px;
   color: #d76532;
 }
-/* line 491, ../sass/screen.scss */
+/* line 492, ../sass/screen.scss */
 .contactAdmin label {
   font-size: 20px;
   font-style: italic;
@@ -725,7 +725,7 @@ td {
   width: 500px;
 }
 
-/* line 503, ../sass/screen.scss */
+/* line 504, ../sass/screen.scss */
 .con_name, .con_email, .con_text {
   background: #333333;
   padding: 3px 10px;
@@ -742,14 +742,14 @@ td {
   border-radius: 15px;
 }
 
-/* line 514, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 .con_text {
   height: 100px;
   width: 400px;
   font-family: "Open Sans", sans-serif, "trebuchet ms", georgia;
 }
 
-/* line 519, ../sass/screen.scss */
+/* line 520, ../sass/screen.scss */
 .con_submit {
   margin: 20px 0px;
   font-size: 16px;
@@ -766,13 +766,13 @@ td {
   line-height: 2;
 }
 
-/* line 530, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 .con_submit:hover {
   background: #d76532;
   cursor: pointer;
 }
 
-/* line 534, ../sass/screen.scss */
+/* line 535, ../sass/screen.scss */
 .contact_glyphs {
   position: relative;
   top: 5px;
@@ -785,7 +785,7 @@ td {
 /*====================================================
         GAMEPAGE STYLES
 ====================================================*/
-/* line 546, ../sass/screen.scss */
+/* line 547, ../sass/screen.scss */
 #adspace-one {
   height: 80px;
   border: 1px dashed #ccc;
@@ -797,7 +797,7 @@ td {
   text-align: center;
 }
 
-/* line 556, ../sass/screen.scss */
+/* line 557, ../sass/screen.scss */
 .game-ui {
   float: right;
   margin-top: 15px;
@@ -817,17 +817,17 @@ td {
   -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 568, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 .game-ui .game-title {
   font-size: 30px !important;
 }
-/* line 571, ../sass/screen.scss */
+/* line 572, ../sass/screen.scss */
 .game-ui .my-score {
   height: 60px;
   color: white;
   font-size: 60px !important;
 }
-/* line 576, ../sass/screen.scss */
+/* line 577, ../sass/screen.scss */
 .game-ui button {
   padding: 5px 12px;
   margin: 5px;
@@ -843,7 +843,7 @@ td {
   -moz-box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 585, ../sass/screen.scss */
+/* line 586, ../sass/screen.scss */
 .game-ui .counter {
   border: 4px solid white;
   -webkit-border-radius: 35px;
@@ -859,7 +859,7 @@ td {
   -moz-box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(255, 0, 0, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 594, ../sass/screen.scss */
+/* line 595, ../sass/screen.scss */
 .game-ui .counter:hover, .game-ui button:hover {
   cursor: pointer;
 }
@@ -867,12 +867,12 @@ td {
 /*====================================================
       CHATBOX STYLES
 /*====================================================*/
-/* line 601, ../sass/screen.scss */
+/* line 602, ../sass/screen.scss */
 #game-chat {
   float: left;
 }
 
-/* line 604, ../sass/screen.scss */
+/* line 605, ../sass/screen.scss */
 #chatbox {
   height: 200px;
   width: 300px;
@@ -893,7 +893,7 @@ td {
   box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
 
-/* line 617, ../sass/screen.scss */
+/* line 618, ../sass/screen.scss */
 #textform {
   height: 50px;
   width: 300px;
@@ -912,7 +912,7 @@ td {
   box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
 
-/* line 628, ../sass/screen.scss */
+/* line 629, ../sass/screen.scss */
 #shout {
   margin: 10px 0px;
   background: #333333;
@@ -935,7 +935,7 @@ td {
 /*====================================================
       Validation Errors
 /*====================================================*/
-/* line 643, ../sass/screen.scss */
+/* line 644, ../sass/screen.scss */
 .wrong {
   position: absolute;
   right: 15%;
@@ -960,7 +960,7 @@ td {
   box-shadow: 0 0 50px red;
 }
 
-/* line 660, ../sass/screen.scss */
+/* line 661, ../sass/screen.scss */
 .ecommerce-button {
   background: #333;
   padding: 5px 15px;

@@ -59,13 +59,9 @@ function validate_login($login_name, $login_pass) {
     'dbname'   => 'registered_users',
   );
   //CONNECT TO DATABASE
- // try {
-    $conn = new PDO('mysql:host=' . $config['db']['host'] . ';dbname=' . $config['db']['dbname'], 
-        $config['db']['username'], $config['db']['password']);
- // } catch (PDOException $e) {
- //   redirect_user(404);
-    //echo $e->getMessage();
-//  }
+  $conn = new PDO('mysql:host=' . $config['db']['host'] . ';dbname=' . $config['db']['dbname'], 
+    $config['db']['username'], $config['db']['password']);
+ 
   $sql = ("SELECT COUNT(*) FROM players WHERE player_name=:name AND player_password=:pword");
   
   $stmt = $conn->prepare($sql);
@@ -78,7 +74,7 @@ function validate_login($login_name, $login_pass) {
   
     if ($count > 0) {
 
-    redirect_user(find_match);
+    redirect_user(redirect_player);
       
     } else {
       echo "<div class='wrong'>";
