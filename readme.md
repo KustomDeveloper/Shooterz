@@ -1,0 +1,1 @@
+Shooters is an online quarters game harnessing the power of Arduino dev environment using a Teensy microcontroller, Php, Javascript, and the new Webrtc spec. I am held up at the moment waiting for this spec to be completed. The getUserMedia(videocam) is working in most browsers, however the handshake(ICE) that connects two users is still being implemented. 
