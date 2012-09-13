@@ -3,6 +3,7 @@
 <head>
   <!--<meta http-equiv="refresh" content="30">-->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>Shooterz | Online Quarters Game</title>
   <meta name="description" content="Online Quarters">
   <meta name="author" content="Online Quarters">

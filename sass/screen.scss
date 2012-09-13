@@ -23,6 +23,7 @@ body{
 }
 img, video{
   max-width: 100%;
+  height:auto !important;
 }
 .topspace{
   margin-top: 100px;
@@ -81,7 +82,7 @@ td{
   padding:20px 20px 1% 20px;
   background:#000;
   background-image: url('http://localhost/Shooterz/images/poster.jpg');
-  background-size: 1000px;
+  background-size: 100%;
   background-position:center;
   @include border-radius(15px);
   border:10px solid $color5;
