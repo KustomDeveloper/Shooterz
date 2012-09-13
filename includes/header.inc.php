@@ -30,7 +30,7 @@
   </div><!--End loginbar-->
   
   <div id="branding">
-    <div class="logo"><img src="images/shooterz-comic-logo.png" width="250px"height="143px"/></div>
+    <div class="logo"><img src="images/final-logo.png" width="250px"height="157px"/></div>
     <div class="nav">
       <ul>
         <li><a href="index.php">Home</a></li>

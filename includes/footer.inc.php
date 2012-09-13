@@ -5,7 +5,7 @@
 </div><!--col-1-3-->
 </div><!--Grid-->
 <div id="footer">
-	<div class="footer-logo"><img src="images/shooterz-comic-logo-footer.png"/></div>
+	<div class="footer-logo"><img src="images/final-logo.png" width="150" height="94" /></div>
 	
 	<div class="footer-nav">
 	
