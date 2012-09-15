@@ -8,17 +8,17 @@
 
       <ul>
       
-      <label for="Name"><span class="contact_glyphs">+</span>Name?</label>
+      <label for="Name"><span class="contact_glyphs">+</span>Name</label>
       <li>
       	<input type="text"  id="con_name" name="con_name" class="con_name"  size="16" value='<?php echo old("con_name");?>' />
       </li>
       
-      <label for="Email"><span class="contact_glyphs">%</span>Email?</label>
+      <label for="Email"><span class="contact_glyphs">%</span>Email</label>
       <li>
       <input type="email"  id="con_email" name="con_email" class="con_email" size="16" value='<?php echo old("con_email");?>' />
       </li>
       
-      <label for="textbox"><span class="contact_glyphs">&</span>What do you want to say?</label>
+      <label for="textbox"><span class="contact_glyphs">&</span>Message</label>
       <li>
       <textarea class="con_text" height="90px"></textarea>
   	  </li>

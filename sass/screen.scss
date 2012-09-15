@@ -23,7 +23,12 @@ body{
 }
 img, video{
   max-width: 100%;
+}
+img, #introvideo{
   height:auto !important;
+}
+input{
+  outline:none;
 }
 .topspace{
   margin-top: 100px;
