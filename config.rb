@@ -22,5 +22,5 @@ javascripts_dir = "javascripts"
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 preferred_syntax = :scss
 
-
 output_style = :compressed # by Fire.app 
+line_comments = false # by Fire.app 

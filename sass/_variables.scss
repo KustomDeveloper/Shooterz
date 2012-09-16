@@ -1,0 +1,29 @@
+//color palette
+  $color0:#000;//black
+  $color1:#D76532;//orange theme
+  $color2:#e3e3e3;//greyish
+  $color3:#ccc;//grey
+  $color4:#fff;//white
+  $color5:#333;//matte black
+  $color6:#F0F0F0;//greyish white
+
+//font sizes
+  $one:32px;
+  $two:22px;
+  $three:16px;
+
+//font families
+  $fontfam:'Open Sans', sans-serif,"trebuchet ms",georgia;
+
+//Media Queries
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1600px) { @content; }
+  }
+  @if $point == mama-bear {
+    @media (max-width: 1350px) { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 1100px)  { @content; }
+  }
+}
