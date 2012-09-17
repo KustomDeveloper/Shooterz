@@ -1,11 +1,9 @@
 <?php include("includes/header.inc.php"); ?>
 
-<form name="contact_me" action="" method="post">
- 
-	<div class="contactAdmin">
-      
-     <h2 style="font-size:28px;margin:100px 0px 30px;font-weight:bold;">Contact Us</h2>
+ <h2 style="font-size:28px;margin:100px 0px 30px;font-weight:bold;">Contact Us</h2>
 
+<form name="contact_me" action="" method="post">
+  <div class="contactAdmin">
       <ul>
       
       <label for="Name"><span class="contact_glyphs">+</span>Name</label>
@@ -33,16 +31,19 @@
   
   </form><!--End form-->
   <script type="text/javascript">
-     //hide the login form so it doesnt interfere-->
-     //with my contact form functionality
+  //hide the login form so it doesnt interfere
+  //with my contact form functionality
       $('.login').hide();
+  //validate message then send using php mail();   
+
+  //if validation successful do this
       $('form').on('submit', function(e){
-     
-      console.log('emptystring');
+        $(this).hide();
+          $('h2').html('Thank You.' + '<br/>' + 'Your message has been sent.');
+  
+          console.log('success!!');
           e.preventDefault();
       });
-
-
 
   </script>
 

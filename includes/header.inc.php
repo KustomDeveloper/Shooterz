@@ -12,10 +12,11 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
  
- 
- <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,700' rel='stylesheet'/>
-
- <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet'/>
+ <!--FONTS-->
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,700'rel='stylesheet'/>
+ <script type="text/javascript" src="//use.typekit.net/fdf0qdk.js"></script>
+ <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!--/FONTS-->
   
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,10 +36,14 @@
     <div class="nav">
       <ul>
         <li><a href="index.php">Home</a></li>
-        <li><a href="register.php">| Register</a></li>
-        <li><a href="about.php">| About</a></li>
-        <li><a href="faq.php">| Faq</a></li>
-        <li><a href="contact.php">| Contact</a></li>
+        <li class="seperator">|</li>
+        <li><a href="register.php">Register</a></li>
+        <li class="seperator">|</li>
+        <li><a href="about.php">About</a></li>
+        <li class="seperator">|</li>
+        <li><a href="faq.php">Faq</a></li>
+        <li class="seperator">|</li>
+        <li><a href="contact.php">Contact</a></li>
       </ul>
     </div>
   

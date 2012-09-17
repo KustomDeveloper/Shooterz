@@ -1,6 +1,6 @@
 <?php include("includes/header.inc.php"); ?>
 
-	<h1 class="tagline">Shooterz. The online quarters game.</h1>
+	<h1 class="tagline">Shooterz. The Online Quarters Game.</h1>
 	<p id="warningMsg"></p>
 	<p style="margin-bottom:50px;">Sign up for a free <a class="highlight-links" href='register.php'>account</a> to start playing.</p>
 	
