@@ -24,9 +24,19 @@
  <?php require("includes/functions.inc.php"); ?>
  <?php //include("includes/videoscript.inc.php"); ?>
 
-</head> <body> <noscript><div class="no-script">Your web browser must have JavaScript enabled in order
- for this web application to display correctly.</div></noscript>
+</head> 
 
+<body> <noscript><div class="no-script">Your web browser must have JavaScript enabled in orderfor this web application to display correctly.</div></noscript>
+  
+  <div class="social-tab">
+      <span class="title-tab">Tell your friends!!</span>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+           <li><a href="#">Google+</a></li>
+        </ul>
+    </div><!--End social-tab-->
+  
   <div id="loginbar">
      <?php include("includes/login.inc.php"); ?>
   </div><!--End loginbar-->
@@ -52,6 +62,7 @@
   <div class="texture"></div>
 
   <div class="grid">
+    
 
   <div class="col-2-3">
    
