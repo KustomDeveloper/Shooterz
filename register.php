@@ -33,7 +33,10 @@
   </form><!--End form-->
   <script type="text/javascript">
       var $r = jQuery.noConflict();
+      var $elem = $r('body');
       $r('.login').hide();
+      $r('html, body').animate({scrollTop: $elem.height()}, 800);
+      
   </script>
 
 <?php include("includes/footer.inc.php"); ?>   

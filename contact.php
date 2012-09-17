@@ -31,9 +31,13 @@
   
   </form><!--End form-->
   <script type="text/javascript">
+ 
   //hide the login form so it doesnt interfere
   //with my contact form functionality
       $('.login').hide();
+      //scroll to bottom of page
+      var $elem = $('body');
+      $('html, body').animate({scrollTop: $elem.height()}, 800);
   //validate message then send using php mail();   
 
   //if validation successful do this
