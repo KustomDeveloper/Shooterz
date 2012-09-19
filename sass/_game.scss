@@ -31,10 +31,12 @@
       color:$color4;
       font-size:60px !important;
     }
+
     button{
-      padding:5px 12px;
       margin:5px;
-      @include border-radius(35px);
+      height:40px;
+      width:40px;
+      @include border-radius(40px);
       border:2px solid $color4;
       background:$color5;
       color:$color4;

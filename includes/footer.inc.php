@@ -29,7 +29,7 @@
 <div id="copyright"><span id="copy">&copy &nbsp 2012 Shooterz.org | The Online Quarters Game</span></div>
 	<script>
 	(function($) {//ITS leaving shit streaks across the screen!!!
-	 $(".social-tab").css('right','-100px');
+	 $(".social-tab").css('right','-103px');
 		$(".social-tab").hover(
 		   function () {
 			  $(this).animate({
@@ -40,7 +40,7 @@
 			},  
 		   function () {
 		      $(this).animate({
-			   right: '-100px'
+			   right: '-103px'
 			  }, 200, function() {
 			    //callback function
 			  });
