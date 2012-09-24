@@ -1,0 +1,59 @@
+.social-icons{
+position:absolute;
+top:15px;
+right:.3%;
+
+//margin:40px 0px 0px 40px;
+  ul{
+    li{
+      width:35px;
+      height:35px;
+      display:inline-block;
+    }
+  }
+}
+//social buttons
+.facebook-ico{
+  background: url('../images/sprite.png') no-repeat -1px -1px;
+  width: 35px;
+  height: 34px;
+    &:hover{
+      background: url('../images/sprite.png') no-repeat -2px -42px;
+      width: 33px;
+      height: 32px;
+      cursor:pointer;
+    }
+}
+.twitter-ico{
+  background: url('../images/sprite.png') no-repeat -41px -1px;
+  width: 35px;
+  height: 34px;  
+    &:hover{
+      background: url('../images/sprite.png') no-repeat -42px -42px;
+      width: 33px;
+      height: 32px;
+      cursor:pointer;
+    }
+}
+.google-ico{
+  background: url('../images/sprite.png') no-repeat -161px -1px;
+  width: 35px;
+  height: 34px;
+   &:hover{
+     background: url('../images/sprite.png') no-repeat -162px -42px;
+     width: 33px;
+     height: 32px;
+     cursor:pointer;
+   }
+}
+.linkedin-ico{
+  background: url('../images/sprite.png') no-repeat -121px -1px;
+  width: 35px;
+  height: 34px;
+  &:hover{
+    background: url('../images/sprite.png') no-repeat -122px -42px;
+    width: 33px;
+    height: 32px;
+    cursor:pointer;
+  }
+}

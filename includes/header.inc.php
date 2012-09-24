@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!--<meta http-equiv="refresh" content="30">-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Shooterz | Online Quarters Game</title>
@@ -12,31 +11,19 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
  
- <!--FONTS-->
  <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,700'rel='stylesheet'/>
  <script type="text/javascript" src="//use.typekit.net/fdf0qdk.js"></script>
  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<!--/FONTS-->
-  
+
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
  <?php require("includes/functions.inc.php"); ?>
- <?php //include("includes/videoscript.inc.php"); ?>
-
+ 
 </head> 
 
-<body> <noscript><div class="no-script">Your web browser must have JavaScript enabled in orderfor this web application to display correctly.</div></noscript>
-  
-  <div class="social-tab">
-      <span class="title-tab">Tell your friends!!</span>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-           <li><a href="#">Google+</a></li>
-        </ul>
-    </div><!--End social-tab-->
-  
+<body> <noscript><div class="no-script">Your web browser must have JavaScript enabled in order for this web application to display correctly.</div></noscript>
+ 
   <div id="loginbar">
      <?php include("includes/login.inc.php"); ?>
   </div><!--End loginbar-->
@@ -60,12 +47,6 @@
   </div><!--End branding-->
   
   <div class="texture"></div>
-
-  <div class="grid">
-    
-
+<div class="grid">
   <div class="col-2-3">
    
-
-
-  

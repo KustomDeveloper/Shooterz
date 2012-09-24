@@ -121,6 +121,38 @@ color:$color1;
 .seperator{
   color:#fff;
 } 
+#branding{
+  position:relative;
+  width:100%;
+   @include breakpoint(baby-bear) {
+    width:1100px;
+  }
+  height:70px;
+  background:#333;
+  font-family: $fontfam;
+}
+.texture{
+  width:100%;
+  height:10px;
+  background: url('../images/dotted-lg.png') repeat-x;
+  position:absolute;
+}
+.logo{
+  position:absolute;
+  top:10px;
+  left:14%;
+   @include breakpoint(mama-bear) {
+    left: 5%;
+  }
+  z-index:999999999;
+}
+
+.tagline {
+  font-family: 'mic-32-new-rounded-web','CubanoRegular';
+  margin:100px 0px;
+  font-size:42px !important;
+}
+
 .grid{
   padding:0 15%;
   @include breakpoint(papa-bear) {
@@ -153,8 +185,9 @@ color:$color1;
     width: 33.33%;
     min-height:800px;
     float:right;
-    border:1px dashed #ccc;
-    padding:115px 5% 0px 5%;
+    border:2px dotted #ccc;
+    padding:120px 5% 0px 5%;
+    position:relative;
   }
   .col-1-2 {
     width: 50%;
@@ -260,123 +293,8 @@ color:$color1;
     border:2px solid $color4 !important;
     cursor:pointer;
   }
-#branding{
-  position:relative;
-  width:100%;
-   @include breakpoint(baby-bear) {
-    width:1100px;
-  }
-  height:70px;
-  background:#333;
-  font-family: $fontfam;
-}
-.texture{
-  width:100%;
-  height:10px;
-  background: url('../images/dotted-lg.png') repeat-x;
-  position:absolute;
-}
-.logo{
-  position:absolute;
-  top:10px;
-  left:14%;
-   @include breakpoint(mama-bear) {
-    left: 5%;
-  }
-  z-index:999999999;
-}
 
-/*====================================================
-      FOOTER STYLES
-====================================================*/
-#footer{
-  position:relative;
-  width:100%;
-   @include breakpoint(baby-bear) {
-    width:1100px;
-  }
-  height:200px;
-  background:#333;
-  border-top:15px solid $color1;
-  &:before{
-    content:"";
-    position: absolute;
-    top:-18px;
-    width:100%;
-    height:3px;
-    background: lighten($color1, 5%);
-    display:block;
-  }
-}
-.footer-logo{
-  position:absolute;
-  bottom:-45px;
-  left:14%;
-   @include breakpoint(mama-bear) {
-    left: 5%;
-  }
-  z-index:999999;
-}
-.footer-nav{
-  position:absolute;
-  bottom:10px;
-  right:15%;
-   @include breakpoint(mama-bear) {
-    right:5%;
-  }
-  z-index:9999;
-  font-family: 'mic-32-new-rounded-web','CubanoRegular', $fontfam;
-  ul{
-    li{
-      display:inline-block;
-      margin-left:5px;
-      }
-    }
-  }
-.footer-nav a{
-  text-decoration:none;
-  color:$color4;
-  @include transition(all .5s ease);
-}
-.footer-nav a:hover{
-  color:$color1;
-} 
-#copyright{
-  position:relative;
-  color:$color0;
-  width:100%;
-  height:40px;
-  background:$color4;
-  background: url('../images/dotted-lg.png') repeat-x;
-  z-index:99999;
-    span{
-      position: absolute;
-      top:15px;
-      left:40%;
-      font-family: 'mic-32-new-rounded-web','CubanoRegular', $fontfam;
-
-    }
-}
-
-.tagline {
-  font-family: 'mic-32-new-rounded-web','CubanoRegular';
-  margin:100px 0px;
-  font-size:42px !important;
-}
-
-#warningMsg{
-  color:red;
-  z-index:999999;
-}
-.highlight-links{
-  font-weight: bold;
-  color:$color1;
-  
-}
-/*====================================================
-        REGISTRATION STYLES
-====================================================*/
-
+//REGISTRATION STYLES
 .register{
   width:500px;
    .notice{
@@ -504,10 +422,7 @@ color:$color1;
   background-color:$color1;
 }
 
-
-/*====================================================
-        CONTACT FORM
-====================================================*/
+//CONTACT FORM
 .contactAdmin{
   position:relative;
   margin:50px auto;
@@ -580,9 +495,8 @@ color:$color1;
   font-size:48px;
   font-style:normal;
 }
-/*====================================================
-      Validation Errors
-/*====================================================*/
+
+//Validation Errors
 .wrong{
   position:absolute;
   right:15%;
@@ -600,41 +514,15 @@ color:$color1;
   @include border-radius(25px);
   @include box-shadow(0 0 50px red);
 }
-
-.social-tab{
-  background:#333;
-  position:absolute;
-  right:0px;
-  top:300px;
-  color:#fff;
-  padding:20px;
-  height:250px;
-  border-left:50px solid $color1;
-  @include border-radius(10px 0px 0px 10px);
-  span{
-    text-align:center;
-    position:absolute;
-    right:-20px;
-    top:100px;
-    width:300px;
-    padding:15px;
-    font-size:24px;
-    @include rotate(-90deg);
-  }
-  ul{ 
-    li{
-      padding:20px 0px;
-      a{
-        color:#fff;
-         &:hover{
-          color:$color1;
-         }
-      }
-    }
-  }
-  &:hover{
-    cursor:pointer;
-  }
+#warningMsg{
+  color:red;
+  z-index:999999;
 }
+.highlight-links{
+  font-weight: bold;
+  color:$color1;
+}
+@import "social";
+@import "footer";
 
 
